@@ -1,9 +1,25 @@
 ---
 layout: page
 title: Hello World!
-tagline: Supporting tagline
+tagline: Notes on Software Development
 ---
 {% include JB/setup %}
+
+Here is the list of posts in this blog: 
+
+<ul class="posts">
+  {% for post in site.posts %}
+    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
+
+## To-Do
+
+- add About page
+- add posts
+- change theme to something nicer
+
+## Old Howto from original version of page
 
 Read [Jekyll Quick Start](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)
 
