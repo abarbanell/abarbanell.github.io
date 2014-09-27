@@ -34,11 +34,13 @@ node -v
 
 Here is how this looks in pictures:
 
-![RaspberryPi running RabbitMQ]
-({{ site.url }}/assets/img/2014/08/612px-6eaee38f5075337736563784792ae91a.jpeg)
+[![RaspberryPi running RabbitMQ]
+({{ site.url }}/assets/img/2014/08/612px-6eaee38f5075337736563784792ae91a.jpeg)]
+({{ site.url }}/assets/img/2014/08/6eaee38f5075337736563784792ae91a.jpeg)
 
-![node.js client running with rabbitMQ on a Raspberry Pi]
-({{ site.url }}/assets/img/2014/08/612px-090b224d539ec598df2df725973bf488.jpeg)
+[![node.js client running with rabbitMQ on a Raspberry Pi]
+({{ site.url }}/assets/img/2014/08/612px-090b224d539ec598df2df725973bf488.jpeg)]
+({{ site.url }}/assets/img/2014/08/090b224d539ec598df2df725973bf488.jpeg)
 
 ## Conclusion
 
