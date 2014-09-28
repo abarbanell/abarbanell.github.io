@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Introducing SCRUM   ideas for a process backlog"
+title: "Introducing SCRUM - ideas for a process backlog"
 description: ""
 category: scrum
 tags: [agile, process, scrum]
