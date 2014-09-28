@@ -5,7 +5,7 @@ tagline: Notes on Software Development
 ---
 {% include JB/setup %}
 
-# Recent Posts
+# Posts
 
 <ul class="posts">
   {% for post in site.posts %}
