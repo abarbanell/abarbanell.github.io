@@ -60,7 +60,8 @@ to [here](http:/linux/2014/08/26/rabbitmq-on-raspberry-pi)
 just to get some experience how to handle the different formatting, the included image assets, etc. 
 
 Later I plan to look at migration tools.
-
+(Edit: I looked at this and decided, with the small number of exiting posts, that a manual 
+"copy & paste" migration is sufficient in my case)
 
 ## Themes
 
