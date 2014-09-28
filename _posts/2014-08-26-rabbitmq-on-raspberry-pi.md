@@ -2,8 +2,8 @@
 layout: post
 title: "RabbitMQ on Raspberry Pi"
 description: ""
-category: Linux 
-tags: [RaspberryPi, RabbitMQ]
+category: linux 
+tags: [raspberrypi, rabbitmq]
 ---
 {% include JB/setup %}
 
