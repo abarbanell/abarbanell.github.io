@@ -15,6 +15,6 @@ This blog is built with Jekyll and github-pages, here is the list of components:
     <li>and others</li>
 </ul>
 
-```
+`
 {{ site.github }}
-```
+`
