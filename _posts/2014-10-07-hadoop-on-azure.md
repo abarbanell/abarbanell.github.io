@@ -7,6 +7,8 @@ tags: [.NET, Tools, hadoop, java ]
 ---
 {% include JB/setup %}
 
+_(last updated 2014-10-11_)
+
 ## Rationale
 
 For working with Hadoop I wanted a single-node hadoop server to try out
@@ -15,6 +17,8 @@ different ways of using Hadoop.
 I had an existing [Azure](http://azure.microsoft.com/en-us/) subscription
 so it worked out free for me, so I chose Azure to set up a small Linux
 server with Hadoop.
+
+So here we start - from 0 to Hadoop in 30 min.
 
 ## Azure basics - Create a server
 
@@ -37,8 +41,10 @@ $ chmod 600 myPrivateKey.key
 Then go to the [Azure portal](https://manage.windowsazure.com) and spin
 up a linux server with Ubuntu 14.04 LTS in the "Standard_A1 (1 core,
 1.75 GB memory)" size. If you just want to try out the setup then an A0
-size server is enough, but it will probably run out of steam soon when
-you start to run hadoop jobs on it.
+size server is enough, but it will run out of steam soon when you start
+to run hadoop jobs on it, which you could resolve by tweaking the java
+virtual machine memory configuration, but it is probably better to start
+with a little more memory.
 
 Let it automatically create a disk (storage account) and select a DNS
 name of your choice, then create.
@@ -66,7 +72,7 @@ $ sudo apt-get upgrade
 $ sudo apt-get install git-core
 $ git clone https://github.com/abarbanell/hadoop-setup.git
 $ cd hadoop-setup
-$ ./setup.sh
+$ . ./setup.sh
 ```
 
 You should expect this to run  about 10 to 15 minutes from login to
@@ -80,13 +86,35 @@ in the next version.
 
 Here is a quick to-do list as a message to my future self:
 
-- add hadoop user and group
-- set log file and directory in /var loag and make readable/writable
-for hadoop user
+- add your personal user account to group "hadoop"
+- document how to: in Azure Portal, open port 8080 and  50070 for hadoop portal, with ACL for your IP.
 - set up path so that hadoop jobs are more accessible
 - create init script to start hadoop single node cluster on system reboot
 - maybe create a skeleton work directory or scaffolding script for your
 hadoop projects
+
+# Validate everything is running
+
+for now (without automatic start of the hadoop system at reboot) we can verify that everyithing is working by following one of the examples from the Hadoop distribution: 
+
+```sh
+
+$ cd adduser <your-user-id> hadoop
+$ cat 'export PATH=$PATH:/usr/local/hadoop/bin:/usr/local/hadoop/sbin'
+$ start-dfs.sh
+$ hdfs dfs -mkdir /user
+$ hdfs dfs -mkdir /user/<your-user-id>
+$ hdfs dfs -put /usr/local/hadoop/etc/hadoop input
+$ hadoop jar \
+/usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.5.1.jar \
+grep input out
+$ hdfs dfs -get output output
+$ cat output/*
+$ stop-dfs.sh
+
+```
+
+If all of that worked then you can start with your own hadoop jobs.
 
 
 ## Optional stuff 
