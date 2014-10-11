@@ -16,7 +16,7 @@ I had an existing [Azure](http://azure.microsoft.com/en-us/) subscription
 so it worked out free for me, so I chose Azure to set up a small Linux
 server with Hadoop.
 
-## Azure basics
+## Azure basics - Create a server
 
 If you do not have an Azure account, you can get one [here]
 (http://azure.microsoft.com/en-us/).
@@ -36,7 +36,9 @@ $ chmod 600 myPrivateKey.key
 
 Then go to the [Azure portal](https://manage.windowsazure.com) and spin
 up a linux server with Ubuntu 14.04 LTS in the "Standard_A1 (1 core,
-1.75 GB memory)" size.
+1.75 GB memory)" size. If you just want to try out the setup then an A0
+size server is enough, but it will probably run out of steam soon when
+you start to run hadoop jobs on it.
 
 Let it automatically create a disk (storage account) and select a DNS
 name of your choice, then create.
@@ -44,7 +46,7 @@ name of your choice, then create.
 After a few minutes, you can log in to your new instance - replace the name of the key file and the dns name with your values:
 
 ```sh
-$ ssh -i ~/.ssh/private.key yourdns.cloudapp.net
+$ ssh -i ~/.ssh/myPrivateKey.key yourdns.cloudapp.net
 ```
 From start of server creation to first login should take you 
 less than 10 minutes.
@@ -53,7 +55,8 @@ less than 10 minutes.
 
 I like to have my setup scripts in a git repository so that I can
 simply repeat the exercise. The following should also work on other
-cloud providers like Amazon and Rackspace.
+cloud providers like Amazon and Rackspace but I have only tested the
+combnation Azure / Ubuntu 14.04.
 
 Initially we need to do this first on a new server: 
 
@@ -75,15 +78,29 @@ This is not ready yet. Now the software is installed, but the hadoop
 jobs are not yet configured. This needs to be added to the setup script
 in the next version.
 
-# Optional steps
+Here is a quick to-do list as a message to my future self:
+
+- add hadoop user and group
+- set log file and directory in /var loag and make readable/writable
+for hadoop user
+- set up path so that hadoop jobs are more accessible
+- create init script to start hadoop single node cluster on system reboot
+- maybe create a skeleton work directory or scaffolding script for your
+hadoop projects
+
+
+## Optional stuff 
 
 If you want to use git for your own projects on this server you should
 configure your git identity with
 
 ```sh
 $ git config --global user.name "Your Name"
-git config --global user.email you@example.com
+$ git config --global user.email you@example.com
 ```
+
+This also is very useful if you want to make changes to the setup script
+and push these changes back to your own git repository.
 
 # Reference
 
