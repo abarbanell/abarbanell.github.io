@@ -95,11 +95,13 @@ hadoop projects
 
 # Validate everything is running
 
-for now (without automatic start of the hadoop system at reboot) we can verify that everyithing is working by following one of the examples from the Hadoop distribution: 
+for now (without automatic start of the hadoop system at reboot) we can
+verify that everyithing is working by following one of the examples from
+the Hadoop distribution (I am assuming you are executing this with thea
+same user account which you used above to run the setup script) :
 
 ```sh
 
-$ cd adduser <your-user-id> hadoop
 $ cat 'export PATH=$PATH:/usr/local/hadoop/bin:/usr/local/hadoop/sbin'
 $ start-dfs.sh
 $ hdfs dfs -mkdir /user
