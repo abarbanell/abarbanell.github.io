@@ -1,0 +1,21 @@
+---
+# SASS front matter - this Sass file should compile to s styles.css file which will later be included in the templates.
+---
+
+// theme specific color and font settings
+
+$backgroundColor: 333;
+
+// Background generator
+@mixin bodyBackground() {
+  //position in sprite is -10px, -457px, but we leave 5px border which happens to be white/transparent in the sprite
+  background: none // url("/img/ibar-sprite.png") no-repeat scroll -5px -452px rgba(0,0,0,0);
+}
+
+// should be separated into a template file 
+body {
+  @include bodyBackground();
+  background-color: $backgroundColor;
+}
+
+
