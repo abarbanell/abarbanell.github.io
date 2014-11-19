@@ -2,7 +2,10 @@
 # YAML front matter - to compile sass file to css
 ---
 
-$backgroundColor: #ddffdd; // light green? 
+$backgroundColor: #f1f1f1; // light grey 
+$foregroundColor: #444444; // middle grey 
+$titleColor: #f39501; // loop orange
+$linkColor: #f39501; // loop orange
 $fontSize: 14px;
 $fontFamily: Open Sans;
 
@@ -56,11 +59,11 @@ a {
 }
 
 a:hover {
-  color: black;
+  color: $foregroundColor;
 }
 
 a:visited {
-  color: #a0a;
+  color: $linkColor;
 }
 
 table {
@@ -84,9 +87,9 @@ ul.posts {
   }
 
   ul.posts span {
-    color: #aaa;
-    font-family: Monaco, "Courier New", monospace;
-    font-size: 80%;
+    color: $foregroundColor;
+    //font-family: Monaco, "Courier New", monospace;
+    //font-size: 80%;
   }
 
 /*****************************************************************************/
@@ -104,32 +107,32 @@ ul.posts {
 }
 
 .title {
-  color: #a00;
+  color: $titleColor;
   font-weight: bold;
   margin-bottom: 2em;
 }
 
   .site .title a {
-    color: #a00;
+    color: $titleColor;
     text-decoration: none;
   }
 
   .site .title a:hover {
-    color: black;
+    color: $foregroundColor;
   }
 
   .site .title a.extra {
-    color: #aaa;
+    color: $foregroundColor;
     text-decoration: none;
     margin-left: 1em;
   }
 
   .site .title a.extra:hover {
-    color: black;
+    color: $foregroundColor;
   }
 
   .site .meta {
-    color: #aaa;
+    color: $foregroundColor;
   }
 
   .site .footer {
@@ -196,7 +199,7 @@ ul.posts {
   /* terminal */
 
   #post pre.terminal {
-    border: 1px solid black;
+    border: 1px solid $foregroundColor;
     background-color: #333;
     color: white;
   }
