@@ -1,3 +1,14 @@
+# abarbanell.github.io
+
+This is the git repository driving the github pages at [abarbanell.github.io](https://abarbanell.github.io). The technology 
+used is Jekyll-Bootstrap, with my own theme. 
+
+The theme is separately available at [abarbanell/theme-tobias](https://github.com/abarbanell/theme-tobias), it is a fork from the 
+well-known theme [jekyllbootstrap/theme-tom](https://github.com/jekyllbootstrap/theme-tom). There are graphical changes to the 
+original theme, but also the introduction of SASS for the css files.
+
+Below is the original intro to Jekyll-Bootstrap as it is still very much applicable to this repo as well.
+
 # Jekyll-Bootstrap
 
 The quickest way to start and publish your Jekyll powered blog. 100% compatible with GitHub pages
