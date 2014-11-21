@@ -2,8 +2,8 @@
 layout: post
 title: "Moving my Blog from Wordpress to Jekyll Bootstrap"
 description: ""
-category: Jekyll 
-tags: [Wordpress, Jekyll]
+category: jekyll 
+tags: [wordpress, jekyll]
 ---
 {% include JB/setup %}
 
