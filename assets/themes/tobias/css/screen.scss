@@ -37,13 +37,18 @@ html, body {
 
 body {
   background-color: $backgroundColor;
+  color: $foregroundColor;
   font-size: $fontSize;
   font-family: $fontFamily;
   text-align: center;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-size: 100%;
+h1 {
+  font-size: 120%;
+}
+
+h2, h3, h4, h5, h6 {
+  font-size: 110%;
 }
 
 h1 {
@@ -88,8 +93,6 @@ ul.posts {
 
   ul.posts span {
     color: $foregroundColor;
-    //font-family: Monaco, "Courier New", monospace;
-    //font-size: 80%;
   }
 
 /*****************************************************************************/
@@ -107,6 +110,7 @@ ul.posts {
 }
 
 .title {
+  font-size: 130%;
   color: $titleColor;
   font-weight: bold;
   margin-bottom: 2em;
