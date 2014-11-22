@@ -3,10 +3,14 @@
 ---
 
 // colors
-$backgroundColor: #f1f1f1; // light grey 
-$foregroundColor: #444444; // middle grey 
-$titleColor: #f39501; // loop orange
-$linkColor: #f39501; // loop orange
+$lightgrey: #f1f1f1;
+$middlegrey: #444444;
+$orange: #f39501;
+
+$backgroundColor: $lightgrey;
+$foregroundColor: $middlegrey;
+$titleColor: $orange;
+$linkColor: $orange;
 
 // sizes
 $font-size: 14px;
@@ -54,14 +58,11 @@ body {
 
 h1 {
   font-size: $header1-font-size;
+  margin-bottom: 1em;
 }
 
 h2, h3, h4, h5, h6 {
   font-size: $header-font-size;
-}
-
-h1 {
-  margin-bottom: 1em;
 }
 
 p {
@@ -69,11 +70,12 @@ p {
 }
 
 a {
-  color: #00a;
+  color: $foregroundColor;
 }
 
 a:hover {
-  color: $foregroundColor;
+  color: $linkColor;
+  font-weight: bold;
 }
 
 a:visited {
@@ -140,7 +142,7 @@ ul.posts {
   }
 
   .site .title a.extra:hover {
-    color: $foregroundColor;
+    color: $linkColor;
   }
 
   .site .meta {
@@ -149,8 +151,8 @@ ul.posts {
 
   .site .footer {
     font-size: $footer-font-size;
-    color: #666;
-    border-top: 4px solid #eee;
+    color: $foregroundColor;
+    border-top: 2px solid $orange;
     margin-top: 2em;
     overflow: hidden;
   }
@@ -161,7 +163,7 @@ ul.posts {
     }
 
       .site .footer .contact a {
-        color: #8085C1;
+        color: $linkColor;
       }
 
     .site .footer .rss {
