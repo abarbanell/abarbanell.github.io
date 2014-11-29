@@ -14,6 +14,7 @@ I have over 15 years experience in IT Management and am
 writing software since Unix/BSD 4.2 in 1985. 
 
 See more at: [http://community.frontiersin.org/people/tobiasabarbanell/7137]
+(http://community.frontiersin.org/people/tobiasabarbanell/7137)
 
 ## About this blog
 
