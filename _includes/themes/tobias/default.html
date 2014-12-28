@@ -27,6 +27,9 @@
   
     {{ content }}
   
+    <div>
+      {% include JB/adsense %}
+    </div>
     <div class="footer">
       <div class="contact">
         <p>
@@ -44,7 +47,6 @@
     </div>
   </div>
 
-  {% include JB/adsense %}
 
   <a href="http://github.com/{{ site.author.github }}"><img style="position: absolute; top: 5px; left: 5px; border: 0;" src="{{ ASSET_PATH }}/images/avatar75.png"
  alt="{{ site.author.name }}" /></a>
