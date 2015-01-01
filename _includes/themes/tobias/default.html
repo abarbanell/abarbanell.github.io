@@ -18,31 +18,36 @@
 </head>
 <body>
 
-  <div class="site">
-    <div class="title">
-      <a href="{{ HOME_PATH }}">{{ site.title }}</a>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3 sidebar hidden-xs">
+        {% include themes/tobias/sidebar.html %}
+      </div>
 
-      <a class="extra" href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a>
-      <a class="extra" href="{{ BASE_PATH }}{{ site.JB.pages_path }}">Pages</a>
-      <a class="extra" href="{{ BASE_PATH }}{{ site.JB.categories_path }}">Categories</a>
-      <a class="extra" href="{{ BASE_PATH }}{{ site.JB.tags_path }}">Tags</a>
-    </div>
-  
-    {{ content }}
-  
-    <div>
-      {% include JB/adsense %}
+      <div class="col-sm-9">
+        <div class="title">
+          <a href="{{ HOME_PATH }}">{{ site.title }}</a>
+
+          <a class="extra" href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a>
+          <a class="extra" href="{{ BASE_PATH }}{{ site.JB.pages_path }}">Pages</a>
+          <a class="extra" href="{{ BASE_PATH }}{{ site.JB.categories_path }}">Categories</a>
+          <a class="extra" href="{{ BASE_PATH }}{{ site.JB.tags_path }}">Tags</a>
+        </div>
+        {{ content }}
+        {% include JB/adsense %}
+      </div>
     </div>
 
-    <div class="footer">
-      <div class="contact">
+    <div class="row footer">
+      <div class="col-sm-5 col-sm-offset-3">
         <p>
           {{ site.author.name }}<br />
           {{ site.tagline }}<br />
           <a href='mailto:{{ site.author.email }}'>{{ site.author.email }}</a>
         </p>
       </div>
-      <div class="contact">
+
+      <div class="col-sm-4">
         <p>
           <a href="http://github.com/{{ site.author.github }}/">github.com/{{ site.author.github }}</a><br />
           <a href="http://twitter.com/{{ site.author.twitter }}/">twitter.com/{{ site.author.twitter }}</a><br />
@@ -50,8 +55,6 @@
       </div>
     </div>
   </div>
-  <a href="http://github.com/{{ site.author.github }}"><img style="position: absolute; top: 5px; left: 5px; border: 0;" src="{{ ASSET_PATH }}/images/avatar75.png"
- alt="{{ site.author.name }}" /></a>
 
   <a href="http://github.com/{{ site.author.github }}"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" /></a>
 
