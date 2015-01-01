@@ -11,6 +11,7 @@ $backgroundColor: $lightgrey;
 $foregroundColor: $middlegrey;
 $titleColor: $orange;
 $linkColor: $orange;
+$sidebarBackgroundColor: $lightgrey;
 
 // sizes
 $font-size: 14px;
@@ -39,11 +40,6 @@ $font-stack: Open Sans, sans-serif;
 /*****************************************************************************/
 
 /* Global Reset */
-
-* {
-  margin: 0;
-  padding: 0;
-}
 
 html, body {
   height: 100%;
@@ -115,29 +111,41 @@ ul.posts {
   overflow: hidden;
 }
 
-.title a {
+.title { 
+  font-size: $title-font-size;
   color: $titleColor;
-  text-decoration: none;
+  font-weight: bold;
+  margin-top: 2em;
+  margin-bottom: 2em;
+
+  a {
+    color: $titleColor;
+    text-decoration: none;
+    margin: 3em auto 2em auto;
+    line-height: 1.5em;
+  }
+
+  a:hover {
+    color: $foregroundColor;
+  }
+
+  a.extra {
+    color: $foregroundColor;
+    text-decoration: none;
+    margin-left: 1em;
+  }
+
+  a.extra:hover {
+    color: $linkColor;
+  }
+
 }
 
-.title a {
-  color: $titleColor;
-  text-decoration: none;
+.sidebar {
+  background-color: $sidebarBackgroundColor;
+  margin-top: 2em;
 }
-
-.title a:hover {
-  color: $foregroundColor;
-}
-
-.title a.extra {
-  color: $foregroundColor;
-  text-decoration: none;
-  margin-left: 1em;
-}
-
-.title a.extra:hover {
-  color: $linkColor;
-}
+  
 
 
 /*****************************************************************************/
@@ -176,12 +184,6 @@ ul.posts {
 
 }
 
-.title {
-  font-size: $title-font-size;
-  color: $titleColor;
-  font-weight: bold;
-  margin-bottom: 2em;
-}
 
 /*****************************************************************************/
 /*
