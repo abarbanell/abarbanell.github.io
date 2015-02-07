@@ -22,6 +22,8 @@ algorithms before I even knew the word. In fact, it pre-dates Google's
 Mapreduce](http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&d=PALL&p=1&u=/netahtml/PTO/srchnum.htm&r=1&f=G&l=50&s1=7,650,331.PN.&OS=PN/7,650,331&RS=PN/7,650,331)
 by more than 10 years.
 
+<!--more-->
+
 So, let's go back to the year 1991. A young, hopeful physics graduate
 (me) had a computing problem as part of his thesis, but the computing
 powers at his disposal where limited. There was a desktop computer on

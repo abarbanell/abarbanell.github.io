@@ -18,6 +18,9 @@ author :
   twitter : tabarbanell
   avatar : https://avatars0.githubusercontent.com/u/4762766?v=3&s=75
 
+paginate: 5
+excerpt_separator: <!--more-->
+
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
 # Most places will/should use BASE_PATH to make the urls
