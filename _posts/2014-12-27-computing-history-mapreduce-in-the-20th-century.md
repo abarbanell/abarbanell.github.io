@@ -7,7 +7,6 @@ tags: [mapreduce, history, algorithms, google, software patent, network]
 ---
 {% include JB/setup %}
 
-# Memories
 
 This is the time of the year, between Christmas and the end of the year,
 where many people bring up fairy tales of their personal history, which
@@ -16,13 +15,14 @@ least pretend to admire.
 
 This story is one of them. 
 
+<!--more-->
+
 So here we go - this is a story about a implementation of mapreduce
 algorithms before I even knew the word. In fact, it pre-dates Google's
 [patent on
 Mapreduce](http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&d=PALL&p=1&u=/netahtml/PTO/srchnum.htm&r=1&f=G&l=50&s1=7,650,331.PN.&OS=PN/7,650,331&RS=PN/7,650,331)
 by more than 10 years.
 
-<!--more-->
 
 So, let's go back to the year 1991. A young, hopeful physics graduate
 (me) had a computing problem as part of his thesis, but the computing
