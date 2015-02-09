@@ -9,9 +9,12 @@ tagline: Notes on Software Development
 
 <ul class="posts">
   {% for post in paginator.posts %}
-    <li><span><strong>{{ post.date | date_to_string }}</strong></span> &raquo; 
-        <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
-        <p>{{ post.excerpt | strip_html | truncate: 250 }}</p>
+    <li>
+	<strong>
+		<span>{{ post.date | date_to_string }}</span> &raquo; 
+		<a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
+	</strong>
+        <p>{{ post.excerpt | strip_html | truncate: 300 }}</p>
     </li>
   {% endfor %}
 </ul>

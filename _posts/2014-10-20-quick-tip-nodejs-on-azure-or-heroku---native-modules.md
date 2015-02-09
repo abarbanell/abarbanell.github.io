@@ -7,14 +7,13 @@ tags: [heroku, azure, node.js]
 ---
 {% include JB/setup %}
 
-# Quick tip: Node.js on Azure or Heroku - native modules
 
 This is a quick tip why I moved one of my websites back from Azure
 to Heroku.
 
 On both platforms I was happy with the ease of deployment from a git
 repository to the hosted site. The problem came when one of my node
-modules included a native module.
+sites included a native module.
 
 ## The problem: native Node.js modules on Azure
 
