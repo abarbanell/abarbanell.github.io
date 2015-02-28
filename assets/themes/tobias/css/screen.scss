@@ -57,11 +57,12 @@ body {
 h1 {
   font-size: $header1-font-size;
   margin-bottom: 1em;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 h2, h3, h4, h5, h6 {
   font-size: $header-font-size;
+  font-weight: bold;
 }
 
 p {
