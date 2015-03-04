@@ -123,17 +123,19 @@ $ sudo apt-get install mono-runtime
 And now we really start - take your time, the 
 ```
 git clone
-
 ```
- takes minutes and
+ takes minutes, the 
+```
+./autogen.sh
+```
+takes one hour  and
 the 
 ```
 make
-
 ```
- takes hours. The screen command is very helpful to make
+takes several hours. The screen command is very helpful to make
 sure your build runs even if you are logging in via ssh and your
-network drops.
+network drops. The *mono* folder will be more than 1.5 GB size.
 
 ```
 $ screen
@@ -145,5 +147,4 @@ $ sudo make install
 ```
 
 
-source: http://www.ranzmaier.at/page/aspnet-vnext-auf-dem-raspberry-pi
 
