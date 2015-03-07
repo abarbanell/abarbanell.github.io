@@ -204,7 +204,7 @@ In the first line it gives the time and source of the build, here it is "(master
 the version number 4.1.0 looks strange as the [newest released version](http://www.mono-project.com/docs/about-mono/releases/) 
 is 3.12.0 at this time .
 
-Anyway. We now the newest Mono now.
+Anyway. We have the newest Mono now.
 
 ## Conclusion
 
