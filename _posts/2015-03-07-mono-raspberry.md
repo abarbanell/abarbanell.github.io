@@ -185,6 +185,7 @@ $ sudo make install
 ```
 
 As usual we check afterwards what we got now: 
+
 ```
 $ mono --version
 Mono JIT compiler version 4.1.0 (master/4f458a4 Fri Mar  6 23:35:49 CET 2015)
