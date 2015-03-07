@@ -199,9 +199,11 @@ Copyright (C) 2002-2014 Novell, Inc, Xamarin Inc and Contributors. www.mono-proj
         GC:            sgen
 ```
 
-In the first line it gives the time and source of the build, here it is "(master/4f458a4 Fri Mar  6 23:35:49 CET 2015)"
+In the first line it gives the time and source of the build, here it is "(master/4f458a4 Fri Mar  6 23:35:49 CET 2015)",
+the version number 4.1.0 looks strange as the [newest released version](http://www.mono-project.com/docs/about-mono/releases/) 
+is 3.12.0 at this time .
 
-Success. We now got Mono version 4.1, not bad.
+Anyway. We now the newest Mono now.
 
 ## Conclusion
 
