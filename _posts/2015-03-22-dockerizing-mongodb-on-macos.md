@@ -23,7 +23,7 @@ bit more convenience.
 # in your development session
 
 ```
-. ./run.sh
+. run.sh
 ```
 
 you can now connect to the mongo instance on the IP given by the command  `boot2docker ip` on port 27017 (the default port).
