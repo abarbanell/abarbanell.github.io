@@ -16,16 +16,28 @@
   <link rel="stylesheet" href="{{ ASSET_PATH }}/css/screen.css" type="text/css" media="screen, projection" />
   {% include JB/adsensescript %}
 
+			<!-- loop badge script -->
+  <script>
+     	(function(w, d, t, s) {
+     		var a = d.createElement(t),
+     	    	m = d.getElementsByTagName(t)[0];
+     		a.async = 1;
+     		a.type = 'text/javascript';
+     		a.src = s;
+     		m.parentNode.insertBefore(a, m)
+     	})(window, document, 'script', '//loop.frontiersin.org/thirdpartybadges/loop-badge.js');
+  </script>
+
 </head>
 <body>
 
   <div class="container">
     <div class="row">
-      <div class="col-sm-2 sidebar hidden-xs">
+      <div class="col-md-3 sidebar hidden-xs">
         {% include themes/tobias/sidebar.html %}
       </div>
 
-      <div class="col-sm-8">
+      <div class="col-md-7">
         <div class="title">
           <a href="{{ HOME_PATH }}">{{ site.title }}</a>
 
@@ -37,13 +49,13 @@
         {{ content }}
         {% include JB/adsensefooter %}
       </div>
-      <div class="col-sm-2 hidden-xs" style="margin-top: 200px">
+      <div class="col-md-2 hidden-xs" style="margin-top: 200px">
         {% include JB/adsensecolumn %}
       </div>
     </div>
 
     <div class="row footer">
-      <div class="col-sm-4 col-sm-offset-2">
+      <div class="col-md-3 ">
         <p>
           {{ site.author.name }}<br />
           {{ site.tagline }}<br />
@@ -51,11 +63,17 @@
         </p>
       </div>
 
-      <div class="col-sm-4">
+      <div class="col-md-3">
         <p>
           <a href="http://github.com/{{ site.author.github }}/">github.com/{{ site.author.github }}</a><br />
           <a href="http://twitter.com/{{ site.author.twitter }}/">twitter.com/{{ site.author.twitter }}</a><br />
         </p>
+      </div>
+
+			<!-- loop badge -->
+      <div class="col-md-6 loop-embedded-badge"
+					data-badge-type="profile" 
+					data-user-id="{{ site.author.loop_id }}" >
       </div>
     </div>
   </div>
