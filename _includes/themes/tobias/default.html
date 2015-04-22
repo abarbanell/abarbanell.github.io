@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="{{ ASSET_PATH }}/css/screen.css" type="text/css" media="screen, projection" />
   {% include JB/adsensescript %}
 
-			<!-- loop badge script -->
+	<!-- loop badge script -->
   <script>
      	(function(w, d, t, s) {
      		var a = d.createElement(t),
@@ -33,11 +33,13 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-md-3 sidebar hidden-xs">
+      <div class="col-md-4 sidebar hidden-xs">
         {% include themes/tobias/sidebar.html %}
+				<p></p>
+        {% include JB/adsensecolumn %}
       </div>
 
-      <div class="col-md-7">
+      <div class="col-md-8">
         <div class="title">
           <a href="{{ HOME_PATH }}">{{ site.title }}</a>
 
@@ -49,13 +51,10 @@
         {{ content }}
         {% include JB/adsensefooter %}
       </div>
-      <div class="col-md-2 hidden-xs" style="margin-top: 200px">
-        {% include JB/adsensecolumn %}
-      </div>
     </div>
 
     <div class="row footer">
-      <div class="col-md-3 ">
+      <div class="col-md-4 ">
         <p>
           {{ site.author.name }}<br />
           {{ site.tagline }}<br />
@@ -71,9 +70,10 @@
       </div>
 
 			<!-- loop badge -->
-      <div class="col-md-6 loop-embedded-badge"
+      <div class="col-md-5 loop-embedded-badge"
 					data-badge-type="profile" 
-					data-user-id="{{ site.author.loop_id }}" >
+					data-user-id="{{ site.author.loop_id }}"
+					style="margin-top: 20px"  >
       </div>
     </div>
   </div>
