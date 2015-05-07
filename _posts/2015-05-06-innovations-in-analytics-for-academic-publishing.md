@@ -8,7 +8,7 @@ tags: [Data Science, presentation, Analytics]
 {% include JB/setup %}
 
 
-My colleague Sandra Hausmann and me gave a talk on 30-Apr-2015 at the 
+My colleague Sandra Hausmann and I gave a talk on 30-Apr-2015 at the 
 conference "Social Media and Web Analytics Innovation" in San Franscisco.
 
 [![Presentation slides]({{ site.url }}/assets/img/2015/04/30/Analytics/Slide01.jpg)]
