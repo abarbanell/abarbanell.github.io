@@ -7,33 +7,9 @@ tags : [raspberry, rabbitmq, benchmark]
 {% include JB/setup %}
 
 
-Recently I have written about how to [set up rabbitmq on a
-Raspberry](/linux/2014/08/26/rabbitmq-on-raspberry-pi/).  Now I was
-interested to get some performance data about this setup. There is
-a great set of benchmarks on the high end spectrum - Google and
-Pivotal show a benchmark [up to 1 million messgaes per
-second](http://blog.pivotal.io/pivotal/products/rabbitmq-hits-one-million-messages-per-second-on-google-compute-engine). 
+In my last post I have shared some results from [Benchmarking RabbitMQ on Raspberry Pi](/raspberry/2015/05/17/benchmarking-rabbitmq-on-raspberry/).  
 
-I will target the low end of the spectrum.
-
-- First I would like to get some basic data about the throughput of
-a rabbitmq on a raspberry.
-
-- Then I would like to compare the different versions of the raspberry
-(type 1 and type 2) because the multi-core CPU of the  type 2 should
-have a strong influence on our benchmark
-
-- Last I would like to compare Raspbian with Ubuntu Core - the new
-type 2 raspberry is capable of running the official Ubuntu Core and
-I would like to know how these two compare.
-
-# Benchmark results
-
-to be filled in later...
-
-# separate Post: "Making of" Benchmarking RabbitMQ on Raspberry Pi
-
-intro to be written...
+I have also promised to go into more detail about the setup for these benchmarks later. So here we go:
 
 # Step 1 - housekeeping
 
@@ -50,12 +26,12 @@ rpi01$ uname -a
 the last command will return the following for Model 1 vs. Model 2
 
 ```
-Linux rpi01 3.18.7+ #755 PREEMPT Thu Feb 12 17:14:31 GMT 2015 armv6l GNU/Linux
-Linux rpi03 3.18.7-v7+ #755 SMP PREEMPT Thu Feb 12 17:20:48 GMT 2015 armv7l GNU/Linux
+Linux rpi01 3.18.11+ #781 PREEMPT Tue Apr 21 18:02:18 BST 2015 armv6l GNU/Linux
+Linux rpi03 3.18.11-v7+ #781 SMP PREEMPT Tue Apr 21 18:07:59 BST 2015 armv7l GNU/Linux
 ```
 
 We see, the only difference is that the Model 2 has a armv71 machine
-id and has SMP enabled because it is a multi-core CPU.
+id and has SMP enabled because it is a multi-core CPU. The Kernel version also shows a '-v7' suffix, but otherwise same number.
 
 
 # Step 2 - get rabbitmq
@@ -91,10 +67,11 @@ check rabbitmq is running
 
 ```
 rpi01$ sudo rabbitmqctl status
-...
 ```
 
-## configuration
+In my benchmarks I have used RabbitMQ version 3.5.3
+
+## Step 3 - configuration
 
 configure user and [admin web ui](http://www.rabbitmq.com/management.html)
 
@@ -109,14 +86,14 @@ now you should be able to see the management console with a web browser:
 
 ![Rabbit console](/assets/img/2015/05/16/rabbit-console.png)
 
-# Step 3 - get the benchmark tools
+# Step 4 - get the benchmark tools
 
 This is [a set of benchmark tools](http://www.rabbitmq.com/java-tools.html)
 included in the [Rabbitmq Java client](http://www.rabbitmq.com/java-client.html).
 
 So we head over to our desktop or laptop (Mac OS Yosemite in my case) and 
 
-- install [java](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
+- insta4l [java](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
 - get [rabbitmq java client](http://www.rabbitmq.com/java-client.html)
 - get [RabbitMQ Performance
 Tool](https://github.com/rabbitmq/rabbitmq-perf-html) to get nice
