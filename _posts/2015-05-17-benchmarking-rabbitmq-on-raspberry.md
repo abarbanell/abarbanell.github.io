@@ -1,5 +1,6 @@
 ---
 layout: post
+title: "Benchmarking RabbitMQ on Raspberry Pi"
 category : raspberry
 tagline: "Benchmarking RabbitMQ on Raspberry Pi"
 tags : [raspberry, rabbitmq, benchmark]

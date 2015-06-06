@@ -1,5 +1,6 @@
 ---
 layout: post
+title: "Making of: Benchmarking RabbitMQ on Raspberry Pi"
 category : raspberry
 tagline: "Benchmarking RabbitMQ on Raspberry Pi"
 tags : [raspberry, rabbitmq, benchmark]
@@ -91,18 +92,37 @@ now you should be able to see the management console with a web browser:
 This is [a set of benchmark tools](http://www.rabbitmq.com/java-tools.html)
 included in the [Rabbitmq Java client](http://www.rabbitmq.com/java-client.html).
 
-So we head over to our desktop or laptop (Mac OS Yosemite in my case) and 
+I have shrinkwrapped the installation of these tools and of [rabbitmq/rabbitmq-perf-html](https://github.com/rabbitmq/rabbitmq-perf-html) on github [abarbanell/rabbitbench](https://github.com/abarbanell/rabbitbench) so you can just fork or clone this as a start. 
 
-- insta4l [java](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
-- get [rabbitmq java client](http://www.rabbitmq.com/java-client.html)
-- get [RabbitMQ Performance
-Tool](https://github.com/rabbitmq/rabbitmq-perf-html) to get nice
-performace graphs embeddable in this webpage (see below)
-- set your environemnt variables and run a few benchmarks to get a feel. You can clone or fork this [project](https://github.com/abarbanell/rabbitbench) as a start. 
+## HOW TO RUN
 
+first, make sure you have java installed, then clone this [repo](https://github.com/abarbanell/rabbitbench) and from within the repo folder, do: 
 
+```
+$ ./setup.sh
+```
+to set up the tools, then you will need to edit the file 'spec.js' in each of benchmark scenario folders './scenario-*'
+ to have valid AMQP URI's for your rabbitMQ broker. You can also create new scenario's by copying  the 'spec.js' file to a new scenario folder.
 
+Then run your scenario's with 
 
+````
+$ ./bench.sh
+```
 
+This will create (or overwrite) the result.js in each of the scenario folders.
+
+You can visualize this with the report.html file in each scenario file. Depending on your browser you may not be able to view this via the "file://.." url, then you just could just fire up a local web server like so: 
+
+```
+$ python -m SimpleHTTPServer
+```
+
+# Conclusion
+
+The results of 
+this exercise have been already explained in my last post 
+[Benchmarking RabbitMQ on Raspberry Pi](/raspberry/2015/05/17/benchmarking-rabbitmq-on-raspberry/)
+so I recommend you head over to see what I got out of it.
 
 
