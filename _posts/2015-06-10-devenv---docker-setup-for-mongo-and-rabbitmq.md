@@ -2,7 +2,7 @@
 layout: post
 title: "devenv: Docker setup for mongo and RabbitMQ"
 description: ""
-category: 
+category: linux
 tags: []
 ---
 {% include JB/setup %}
