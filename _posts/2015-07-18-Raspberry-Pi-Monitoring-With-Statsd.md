@@ -3,7 +3,7 @@ layout: post
 category : raspberry
 tagline: "Raspberry Pi Monitoring"
 tags : [raspberry, monitoring, linux, statsd]
-title: Monitoring your Raspberry Pi with Statsd
+title: Monitoring your Raspberry Pi with Statsd - Part I
 ---
 {% include JB/setup %}
 
@@ -21,34 +21,35 @@ good start for that.
 
 # Design Decisions
 
-I had some experience with a variety of monitoring sytsems (Nagios,
-New Relic,  Statsd are the more recent experiences) and had a preference for something I knew.
+I had some experience with a variety of monitoring systems (Nagios,
+New Relic,  Statsd are the more recent experiences) and had a
+preference for something I knew.
 
 In this scenario I wanted the following points to be covered: 
 
-- I wanted to run the graphs from a server, because I wanted
-to monitor multiply Rasperry boxes, and not spoil one of them with 
-a web frontened and data store for the monitoring itself. 
-- I wanted something where an application can decide to send
-arbitrary metrics without previous configuration on the server.
-Not a polling system like in Nagios, but a push based system like
-New Relic or Statsd.
+- I wanted to run the graphs from a server instead of the Raspberry,
+because I wanted to monitor multiple Rasperry Pi's, and not spoil
+one of them with a web frontened and data store for the monitoring
+itself.
+- I wanted something where an application can send arbitrary metrics
+without previous configuration on the server.  Not a polling system
+like in Nagios, but a push based system like New Relic or Statsd.
 
 New Relic looks fine at first, but the "arbitrary metrics" part is
 only available in the paid version, so this is out.
 
 Decision taken: I will be logging via statsd. A server is quickly
-set up as a docker container on a server somewhere (I have put it on Azure for now),
-an example is
-described [here](https://github.com/kamon-io/docker-grafana-graphite)
-- but I may go into more details of the statsd server setup in 
-another post later.
+set up as a docker container on a server somewhere (I have put it
+on Azure for now), an example is described
+[here](https://github.com/kamon-io/docker-grafana-graphite) - but
+I may go into more details of the statsd server setup in another
+post later.
 
 # Prerequisites
 
 For now we just need to have a running statsd instance, reachable
 on the network on the standard statsd port 8125 - for covenience
-we put this into our /etc/hosts file on the Raspberry:
+we put this IP address into our /etc/hosts file on the Raspberry:
 
 ```
 192.168.100.200 statsd
@@ -62,7 +63,8 @@ Now we can just go on the Raspberry and do:
 sudo apt-get install python-pip
 ```
 
-and then we can install the [Python Statsd Client](https://pypi.python.org/pypi/statsd) with 
+and then we can install the 
+[Python Statsd Client](https://pypi.python.org/pypi/statsd) with 
 
 ```
 $ pip install statsd
