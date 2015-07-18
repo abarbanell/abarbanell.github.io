@@ -2,8 +2,8 @@
 layout: post
 title: "Raspberry Pi and Akka / Scala"
 description: ""
-category: scala
-tags: [scala, akka, raspberrypi]
+category: raspberry
+tags: [scala, akka, raspberry]
 ---
 {% include JB/setup %}
 
@@ -11,7 +11,7 @@ This post is about running [Akka](http://akka.io/) on the Raspberry Pi, but beca
 is so simple to do I will also talk about a simpler development and
 deployment process.
 
-Clearly from my first [post](http:/2012/09/16/raspberry-pi-and-scala)
+Clearly from my first [post](http:/2012/09/16/raspberry/raspberry-pi-and-scala)
 about Scala on the RaspberryPi you can see that the Java JVM on Raspbian
 is not very fast, so I looked at a process of developing a Scala /
 Akka application on my Linux desktop and just copy it to the Raspberry

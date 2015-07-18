@@ -2,13 +2,13 @@
 layout: post
 title: "Raspberry Pi and Scala: The Typesafe Stack"
 description: ""
-category: scala
-tags: [raspberrypi, scala]
+category: raspberry
+tags: [raspberry, scala]
 ---
 {% include JB/setup %}
 
 Following on from my earlier
-[post](http:/2012/09/16/raspberry-pi-and-scala/) I wanted to get the
+[post](http:/2012/09/16/raspberry/raspberry-pi-and-scala/) I wanted to get the
 the full [Typesafe Stack](http://typesafe.com/stack) on my little Raspberry Pi.
 
 So here we go:

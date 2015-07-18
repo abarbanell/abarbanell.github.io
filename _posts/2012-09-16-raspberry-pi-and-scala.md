@@ -2,8 +2,8 @@
 layout: post
 title: "Raspberry Pi and Scala"
 description: ""
-category: 
-tags: []
+category: raspberry
+tags: [raspberry, scala]
 ---
 {% include JB/setup %}
 
