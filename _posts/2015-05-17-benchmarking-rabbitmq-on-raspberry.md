@@ -9,7 +9,7 @@ tags : [raspberry, rabbitmq, benchmark]
 
 
 A while ago I have written about how to [set up rabbitmq on a
-Raspberry](/linux/2014/08/26/rabbitmq-on-raspberry-pi/).  Now I was
+Raspberry](/raspberry/2014/08/26/rabbitmq-on-raspberry-pi/).  Now I was
 interested to get some performance data about this setup. There is
 a great set of benchmarks on the high end spectrum - Google and
 Pivotal show a benchmark [at 1 million messages per
@@ -29,7 +29,7 @@ the old armv61 CPU of the Raspberry 1:
 ![Summary 1->1 armv61](/assets/img/2015/05/16/summary-1-1-armv61.png)
 
 More than 700 per sec, I am already impressed. Based on my 
-[work earlier](/linux/2014/08/26/rabbitmq-on-raspberry-pi/)
+[work earlier](/raspberry/2014/08/26/rabbitmq-on-raspberry-pi/)
  I was not expecting such a high throughput from a single-core CPU armv61.
 
 ![Consume 1->1 armv61](/assets/img/2015/05/16/consume-1-1-armv61.png)

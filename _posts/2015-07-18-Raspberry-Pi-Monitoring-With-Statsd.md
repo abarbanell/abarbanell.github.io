@@ -19,23 +19,34 @@ Also, one of my next projects will require the logging of external
 sensor data, and a general purpose monitoring infrastructure is a
 good start for that.
 
+# Design Decisions
+
 I had some experience with a variety of monitoring sytsems (Nagios,
-New Relic,  Statsd are the more recent experiences) and for this
-purpose I wanted something where an application can decide to send
+New Relic,  Statsd are the more recent experiences) and had a preference for something I knew.
+
+In this scenario I wanted the following points to be covered: 
+
+- I wanted to run the graphs from a server, because I wanted
+to monitor multiply Rasperry boxes, and not spoil one of them with 
+a web frontened and data store for the monitoring itself. 
+- I wanted something where an application can decide to send
 arbitrary metrics without previous configuration on the server.
-Not a polling system like in Nagios, but a push based.ystem like
+Not a polling system like in Nagios, but a push based system like
 New Relic or Statsd.
 
 New Relic looks fine at first, but the "arbitrary metrics" part is
 only available in the paid version, so this is out.
 
 Decision taken: I will be logging via statsd. A server is quickly
-set up as a docker container on a server somewhere, example would
-be described [here](https://github.com/kamon-io/docker-grafana-graphite)
-- but I may go into more details of the statsd server setup into 
+set up as a docker container on a server somewhere (I have put it on Azure for now),
+an example is
+described [here](https://github.com/kamon-io/docker-grafana-graphite)
+- but I may go into more details of the statsd server setup in 
 another post later.
 
-For here we just need to have a running statsd instance, reachable
+# Prerequisites
+
+For now we just need to have a running statsd instance, reachable
 on the network on the standard statsd port 8125 - for covenience
 we put this into our /etc/hosts file on the Raspberry:
 
@@ -80,7 +91,6 @@ import psutil
 
 host = os.uname()[1]
 cpu = psutil.cpu_percent(interval=1)
-icpu = int(round(cpu))
 
 c = statsd.StatsClient('statsd', 8125, prefix=host)
 
@@ -91,7 +101,10 @@ c.gauge('cpu.percent', cpu)
 
 # GIT install
 
-You can find all of this on github in the project [rpym](https://github.com/abarbanell/rpym). It also has a setup script to download all the necessary python libraries and ubuntu packages.
+You can find all of this on github in the project
+[rpym](https://github.com/abarbanell/rpym). It also has a setup
+script to download all the necessary python libraries and ubuntu
+packages.
 
 So then you just need to do three steps: 
 
@@ -121,14 +134,18 @@ Crontab:
 
 ```
 # m h  dom mon dow   command
+# change the path as necessary to point to the git repository on your system
 * * * * * $HOME/github/abarbanell/rpym/mon.py
 ```
 
 # Results
 
-This was just a first step to get the monitoring infrastructure in place. From here on it will be straightforward to add more metrics later.
+This was just a first step to get the monitoring infrastructure in
+place. From here on it will be straightforward to add more metrics
+later.
 
-Meanwhile, I can enjoy the beauty of the combined CPU graphs of my three Raspberry Pi boxes.
+Meanwhile, I can enjoy the beauty of the combined CPU graphs of my
+three Raspberry Pi boxes.
 
 <img src="/assets/img/2015/07/18/cpu-monitor.png" alt="CPU Monitoring" style="width: 100%;" />
 
