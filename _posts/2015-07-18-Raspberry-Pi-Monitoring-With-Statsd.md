@@ -152,3 +152,11 @@ three Raspberry Pi boxes.
 <img src="/assets/img/2015/07/18/cpu-monitor.png" alt="CPU Monitoring" style="width: 100%;" />
 
 Stay tuned for more.
+
+## Added 19-Jul-2015: CPU temp reading
+
+As mentioned above adding more metrics will be easy, as a first
+exercise I have added CPU temperature readings. If you pull the
+lates from the [rpym git repo](https://github.com/abarbanell/rpym)
+then you get this as well sent to your statsd server.
+
