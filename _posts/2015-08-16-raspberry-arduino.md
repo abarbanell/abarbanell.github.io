@@ -127,7 +127,8 @@ But then to run the software you need to unplug from your Desktop
 and connect to the Raspberry. Not nice. Also, if you bought one of
 the cheap [Arduino Nano clones](http://www.aliexpress.com/premium/arduino-nano.html) 
 from China, they may have a different
-serial chip (CH340 instead of ftdi), and you would need to download a driver from a chinese
+serial chip (CH340 instead of ftdi), and you would need to download a driver from a 
+chinese
 website to your precious desktop. Can't you run the Arduino IDE
 directly on the Raspberry?
 
