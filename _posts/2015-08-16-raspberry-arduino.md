@@ -2,7 +2,7 @@
 layout: post
 category : raspberry
 tagline: "Connecting an Arduino to a Raspberry"
-tags : [raspberry, arduino, linux, monitoring"]
+tags : [raspberry, arduino, linux, monitoring, iot"]
 title: "Monitoring the Real World with your Raspberry Pi - Part III: connecting an Arduino "
 ---
 {% include JB/setup %}
@@ -24,7 +24,8 @@ environment measurements, and I could see that with open windows
 in my living room the temperature was dropping with every summer
 thunderstorm. But of course more can be done.
 
-If you want to follow along, be prepared to wire up some electronics parts. No soldering is required. Just plug an pray... 
+If you want to follow along, be prepared to wire up some electronics
+parts. No soldering is required. Just plug an pray...
 
 <img src="/assets/img/2015/08/sensor-photo.jpg" 
 alt="Sensor Circuit on Breadboard" style="width: 100%;" />
@@ -38,7 +39,11 @@ or another. This may not all apply to your situations, as my decisions
 were influenced not only by the "best" solution, but also by parts
 I had available, knowledge already in my brain, etc.
 
-So, to start with, what do I want to measure? In my case, I want to eventually build a system which can water my indoor and outdoor plants during my vacation. So I will eventually also have to control pumps, valves etc based on the measurements taken. But this comes much later, First, lets measure the following: 
+So, to start with, what do I want to measure? In my case, I want
+to eventually build a system which can water my indoor and outdoor
+plants during my vacation. So I will also have to control
+pumps, valves etc. based on the measurements taken. But this comes
+much later, first lets measure the following:
 
 - air temperature
 - air humidity
@@ -49,16 +54,17 @@ There are some sensors available for this, I have chosen the
 - [DHT22](https://www.adafruit.com/products/385) for air temperature
 and humidity. Reason: cheap, simple, available libraries to read
 out the digital data pin.
-- Soil hygrometer FC-28
+- Soil hygrometer FC-28, available from manz places, like 
 [Aliexpress](http://www.aliexpress.com/wholesale?SearchText=fc-28&CatId=0&catId=),
 [Amazon](http://www.amazon.com/FC-28-B-Humidity-Detection-Sensor-Module/dp/B00KV38ZZS),
- pretty common use, widely available, analog output.
+ it is in pretty common use, widely available, analog output.
 
-Hey, wait, analog output? The Raspberry Pi does not have those. I
+Hey, wait, analog? The Raspberry Pi does not have any analog IO. I
 could add an anaog IO board like
 [Custard-3](http://www.sf-innovations.co.uk/custard-pi-3.html) to
-the Raspberry, but that looks like quite a bit of stuiff and it's not cheap, would
-it not be simpler just to use an [Arduino](https://www.arduino.cc/) instead of the
+the Raspberry, but that looks like quite a bit of stuiff and it's
+not cheap, would it not be simpler just to use an
+[Arduino](https://www.arduino.cc/) instead of the
 Raspberry?
 
 Clearly this would be nice for the analog I/O, but then the Arduino
@@ -70,7 +76,8 @@ successfully delivering its promise:
 [Wino-Board](http://www.wino-board.com/index.php/en/) - an arduino
 with wifi for small money.
 
-Ok, so here is the approach: The Raspberry is connected via USB to
+Ok, I have ordered some of these, but I do not want towait, so here
+is the approach: The Raspberry is connected via USB to
 a small Arduino controller, which reads the sensor data and returns
 it via the Serial Connection provided by the USB in a JSON format.
 On the Raspberry there is a small Python script which runs every
@@ -85,7 +92,8 @@ they cannot be found in the household somewhere.
 
 - Arduino Microcontroller. There are many flavours, different in
 processing speed, power and form factor. I have chosen a small
-bread-board-compatible model with USB port. This makes the wiring
+bread-board-compatible model ([Arduino Micro](https://www.arduino.cc/en/Main/arduinoBoardMicro))
+with USB port. This makes the wiring
 much easier (just plug it into a breadboard) and makes the power
 supply and communication to the Raspberyy also very easy.
 - A breadboard. "half size" would be sufficient, but I have used a
@@ -94,7 +102,7 @@ supply and communication to the Raspberyy also very easy.
 - one DHT 22 sensor
 - one (or more ) soild hygrometer sensors
 - A Raspberry with power supply and Internet - of course you have
-this already, if you followed the tow parts before.
+this already, if you followed the two parts before.
 
 You can go to an electronics shop, but most cities don't have this
 any more. You can buy online in many places. Since this is just a
@@ -106,7 +114,7 @@ product (well, sometimes I ordered the wrong part, but
 that's another story). The only time I got a chip with bent legs
 was when I bought it in a shop and carried it home in my backpack.
 
-As for tools, I have bought a multimeter, whish is useful, but still 
+As for tools, I have bought a multimeter, which is useful, but still 
 not absolutely necessary for this project.
 
 # Development tools
@@ -117,12 +125,13 @@ your Arduino via USB to your PC or Mac. Works fine.
 
 But then to run the software you need to unplug from your Desktop
 and connect to the Raspberry. Not nice. Also, if you bought one of
-the cheap Arduino Nano clones from China, they may have an old FTDI
-serial chip, and you would need to download a driver from a chinese
+the cheap [Arduino Nano clones](http://www.aliexpress.com/premium/arduino-nano.html) 
+from China, they may have a different
+serial chip (CH340 instead of ftdi), and you would need to download a driver from a chinese
 website to your precious desktop. Can't you run the Arduino IDE
 directly on the Raspberry?
 
-Answer is: Yes, we can. 
+Answer is: Yes, we can. You do not even need to download a driver.
 
 But...
 
@@ -158,7 +167,7 @@ your display manager directly on the Raspberry, but I have not
 tested this. For me, with ssh only, the issues after this upgrade
 were:
 
-- none yet.
+- exactly none yet.
 
 ## Arduino IDE 1.6.5
 
