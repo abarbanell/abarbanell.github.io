@@ -35,7 +35,7 @@ alt="Sensor Circuit on Breadboard" style="width: 100%;" />
 
 Before we start, I wanted to share my thoughts about some of the
 choices to be made along the way, and why I decided on one approach
-or another. This may not all apply to your situations, as my decisions
+or another. This may not all apply to your situation, as my decisions
 were influenced not only by the "best" solution, but also by parts
 I had available, knowledge already in my brain, etc.
 
@@ -54,7 +54,7 @@ There are some sensors available for this, I have chosen the
 - [DHT22](https://www.adafruit.com/products/385) for air temperature
 and humidity. Reason: cheap, simple, available libraries to read
 out the digital data pin.
-- Soil hygrometer FC-28, available from manz places, like 
+- Soil hygrometer FC-28, available from many places, like 
 [Aliexpress](http://www.aliexpress.com/wholesale?SearchText=fc-28&CatId=0&catId=),
 [Amazon](http://www.amazon.com/FC-28-B-Humidity-Detection-Sensor-Module/dp/B00KV38ZZS),
  it is in pretty common use, widely available, analog output.
@@ -62,7 +62,7 @@ out the digital data pin.
 Hey, wait, analog? The Raspberry Pi does not have any analog IO. I
 could add an anaog IO board like
 [Custard-3](http://www.sf-innovations.co.uk/custard-pi-3.html) to
-the Raspberry, but that looks like quite a bit of stuiff and it's
+the Raspberry, but that looks like quite a bit of stuff and it's
 not cheap, would it not be simpler just to use an
 [Arduino](https://www.arduino.cc/) instead of the
 Raspberry?
@@ -76,7 +76,7 @@ successfully delivering its promise:
 [Wino-Board](http://www.wino-board.com/index.php/en/) - an arduino
 with wifi for small money.
 
-Ok, I have ordered some of these, but I do not want towait, so here
+Ok, I have ordered some of these, but I do not want to wait, so here
 is the approach: The Raspberry is connected via USB to
 a small Arduino controller, which reads the sensor data and returns
 it via the Serial Connection provided by the USB in a JSON format.
@@ -86,7 +86,7 @@ monitoring server.
 
 # Shopping time
 
-People think that men do not like shopping. This is a proof of the
+People think that men do not like shopping. Here we have a proof of the
 contrary. We will need to buy a few parts, and also some tools if
 they cannot be found in the household somewhere.
 
@@ -100,9 +100,10 @@ supply and communication to the Raspberyy also very easy.
 "standard size" (830 pins)
 - some cables 
 - one DHT 22 sensor
-- one (or more ) soild hygrometer sensors
+- one (or more ) soil hygrometer sensors
 - A Raspberry with power supply and Internet - of course you have
-this already, if you followed the two parts before.
+this already, if you followed the two parts before. Should be a Raspberry-2 
+if you also want to use it to run the development IDE.
 
 You can go to an electronics shop, but most cities don't have this
 any more. You can buy online in many places. Since this is just a
