@@ -1,7 +1,7 @@
 # abarbanell.github.io -> http://blog.abarbanell.de
 
 This is the git repository driving the github pages at
-[blog.abarbaell.de](https://blog.abarbanell.de). The technology
+[blog.abarbanell.de](http://blog.abarbanell.de). The technology
 used is Jekyll-Bootstrap, with my own theme.
 
 The theme is separately available at
@@ -30,15 +30,17 @@ Create a new post with:
 $ rake post title="Hello World"
 ```
 
+## Gihtub pages with jekyll
 
-## Version
+see details [here](https://help.github.com/articles/using-jekyll-with-pages/).
 
-0.3.0 - stable and versioned using [semantic versioning](http://semver.org/).
+start jekyll server on MacOS: 
 
-**NOTE:** 0.3.0 introduces a new theme which is not backwards compatible in the sense it won't _look_ like the old version.
-However, the actual API has not changed at all.
-You might want to run 0.3.0 in a branch to make sure you are ok with the theme design changes.
+```
+$ bundle exec jekyll serve
+```
 
-## License
+
+## License 
 
 [MIT](http://opensource.org/licenses/MIT)
