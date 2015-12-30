@@ -2,7 +2,7 @@
 layout: post
 category : raspberry
 tagline: "Connecting an Arduino to a Raspberry"
-tags : [raspberry, arduino, linux, monitoring, iot"]
+tags : [raspberry, arduino, linux, monitoring, iot]
 title: "Monitoring the Real World with your Raspberry Pi - Part III: connecting an Arduino "
 ---
 {% include JB/setup %}

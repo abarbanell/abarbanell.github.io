@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Monitoring the real world with Raspberry Pi and Arduino - part IV - the home grown IOT backend"
-description: ""
-category: 
-tags: [RaspberryPi, Arduino]
+title: "Limitless Garden - the home-grown IOT backend service"
+description: "Monitoring the real world with Raspberry Pi and Arduino - part IV"
+category: raspberry 
+tags: [raspberry, arduino, iot, mongo, node.js, api]
 ---
 {% include JB/setup %}
 
@@ -58,16 +58,26 @@ application.
 heroku chose also a name for my site which was such a good fit for
 this internet-enabled home garden,  I just had to use this as the
 project name and it is now on github as
-[abarbanel/limitless-garden](https://github.com/abarbanell/limitless-garden).
+[abarbanell/limitless-garden](https://github.com/abarbanell/limitless-garden).
 I did not choose this name, the name chose this project by itself,
 how could I refuse?
 
+[![image of limitless garden website]({{ site.baseurl }}/assets/img/2015/12/lg.png)](https//https://github.com/abarbanell/limitless-garden)
+
 This project has no user interface worth much at this time, although
-this may come later. The only real meat is in  the api functions which
+this may come later. The only real meat is in  the [api functions](https://github.com/abarbanell/limitless-garden/blob/master/routes/api.js) which
 allow you to save and retrieve arbitrary data. The api_key is the
 most suitabe security for this as it is very lightweight - and we
 are not talking about very sensitive data. We may need to revise
 this if the data here could actually open some water pumps in your
-home, you would not want this system to be compromised when we get
-there.
+home, you would not want this system to be compromised in this case.
 
+## Conclusion
+
+We have now build some monitoring and data capture system which
+allows us to build further. the next iterations will be to scale
+up the amount of data logged from our home garden, then build some
+signals to water the plants, then push this signal down to automatically
+operate a water pump.
+
+Stay tuned for more.

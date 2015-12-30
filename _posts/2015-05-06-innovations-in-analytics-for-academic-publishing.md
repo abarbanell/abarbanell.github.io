@@ -3,7 +3,7 @@ layout: post
 title: "Innovations in Analytics for Academic Publishing "
 description: "Conference presentation from the conference Social Media and Web Analytics Innovation, San Francisco, 30-Apr-2015"
 category: slides 
-tags: [Data Science, presentation, Analytics]
+tags: [data science, presentation, analytics]
 flexslider: 
  - image: /assets/img/2015/04/30/Analytics/Slide01.jpg
  - image: /assets/img/2015/04/30/Analytics/Slide02.jpg

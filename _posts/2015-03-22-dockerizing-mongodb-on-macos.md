@@ -2,8 +2,8 @@
 layout: post
 title: "Dockerizing MongoDB on MacOS"
 description: ""
-category: Linux
-tags: [MacOS, Linux, Docker, Mongo]
+category: linux
+tags: [macos, linux, docker, mongo]
 ---
 {% include JB/setup %}
 

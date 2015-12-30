@@ -2,8 +2,8 @@
 layout: post
 title: "New Blog section for Arduino"
 description: "Announcement of a new blog section for Arduino-related topics"
-category: Arduino
-tags: [Arduino, IoT, Software, Hardware]
+category: arduino
+tags: [arduino, iot, software, hardware]
 ---
 {% include JB/setup %}
 
@@ -16,7 +16,8 @@ There will be tips and tricks and articles at [http://blog.abarbanell.de/arduino
 The first [post](http://blog.abarbanell.de/arduino-wino/wino/arduino/2015/10/31/Arduino-Wino-Reset.html)
  is about how to wire up a Reset button for the wino board: 
 
-[![image of wino board](http://blog.abarbanell.de/arduino-wino/img/reset.jpeg)](http://blog.abarbanell.de/arduino-wino/wino/arduino/2015/10/31/Arduino-Wino-Reset.html)
+[![image of wino
+board](http://blog.abarbanell.de/arduino-wino/img/reset.jpeg)](http://blog.abarbanell.de/arduino-wino/wino/arduino/2015/10/31/Arduino-Wino-Reset.html)
 
 I hope you enjoy it.
 
