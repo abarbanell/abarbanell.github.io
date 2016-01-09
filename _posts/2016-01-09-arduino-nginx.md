@@ -99,7 +99,7 @@ websites as a https frontend before your web server, to offload the
 encryption work to a separate box. I figured out that this was
 exactly the opposite from what I wanted to achieve.
 
-[![nginx on Raspberry]({{ site.baseurl }}/assets/img/2016/01/nginx.png)](//https://github.com/abarbanell/limitless-garden)
+[![nginx on Raspberry -fullwidth]({{ site.baseurl }}/assets/img/2016/01/nginx.png)](https://github.com/abarbanell/limitless-garden)
 
 Instead of sitting close to the web server and converting from https
 to http, I wanted it to sit close to my web clients (my arduino's)
