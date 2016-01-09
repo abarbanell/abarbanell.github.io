@@ -62,7 +62,7 @@ project name and it is now on github as
 I did not choose this name, the name chose this project by itself,
 how could I refuse?
 
-[![image of limitless garden website]({{ site.baseurl }}/assets/img/2015/12/lg.png)](https//https://github.com/abarbanell/limitless-garden)
+[![image of limitless garden website]({{ site.baseurl }}/assets/img/2015/12/lg.png)](https://github.com/abarbanell/limitless-garden)
 
 This project has no user interface worth much at this time, although
 this may come later. The only real meat is in  the [api functions](https://github.com/abarbanell/limitless-garden/blob/master/routes/api.js) which
