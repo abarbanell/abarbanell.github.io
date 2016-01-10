@@ -71,6 +71,7 @@ p {
 
 a {
   color: $foregroundColor;
+  text-decoration: underline $linkColor; 
 }
 
 a:hover {
@@ -80,6 +81,7 @@ a:hover {
 
 a:visited {
   color: $linkColor;
+	
 }
 
 table {
@@ -233,7 +235,7 @@ ul.posts {
     background-color: #333;
   }
 
-	#post img {
+	#post img { 
 		width: 100%;
 	}
 

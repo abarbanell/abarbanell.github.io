@@ -11,7 +11,7 @@ is a fork from the well-known theme
 There are graphical changes to the original theme, but also the
 introduction of SASS for the css files.
 
-Below is the original intro to Jekyll-Bootstrap modified to keep a
+Below are some parts of the original intro to Jekyll-Bootstrap modified to keep a
 reminder for myself about the most relevant commands
 
 ## Jekyll-Bootstrap
@@ -38,6 +38,12 @@ start jekyll server on MacOS:
 
 ```
 $ bundle exec jekyll serve
+```
+
+## update or change theme
+
+```
+$ rake theme:install git="https://github.com/abarbanell/theme-tobias.git"
 ```
 
 
