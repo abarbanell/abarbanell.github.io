@@ -8,8 +8,8 @@ tags: [raspberrypi, arduino, nginx, iot, security]
 {% include JB/setup %}
 
 As a general rule, all API calls to your backend should always be
-encrypted with https (SSL/TLS), this applies for IOT scenarios as
-well as for internet traffic in general. However, if you use
+encrypted with https (SSL/TLS), this applies for IOT scenarios just the same
+ as for internet traffic in general. However, if you use
 cost-effective microcontrollers like Arduino or ESP8266, there is
 not enough computing horsepower to encrypt the traffic, or even
 enough memory to store the code for proper SSL/TLS handshake
@@ -23,12 +23,12 @@ I did not want to send the data from my home sensors unencrypted
 into the world.
 
 Here I will describe a nice and elegant solution which solved this
-problme for me.
+problem for me.
 
 # The story so far
 
-In the previous parts of this series about Monitoring everything
-with Raspberry Pi and Ardiuino I have described:
+In the previous parts of this series about "Monitoring Everything
+with Raspberry Pi and Arduino" I have described:
 
 - [part I](/raspberry/2015/07/18/Raspberry-Pi-Monitoring-With-Statsd/)
 setting up a minimal monitoring system using a [statsd client in
@@ -64,8 +64,8 @@ accepted without encryption.
 
 In some of my use cases I have a Raspberry Pi to read some sensors,
 or to connect to an Arduino via USB to use the Arduino's analog
-input. This works without problem, because the Raspberry Pi (any
-version) is strong enough to use https directly.
+input. This works without problem, because the any version of the 
+Raspberry Pi is strong enough to use https directly.
 
 # Arduino and ESP8266
 
@@ -77,11 +77,11 @@ the [Wino board](http://www.wino-board.com) or the
 option is to use an [ESP8266](https://en.wikipedia.org/wiki/ESP8266)
  chip and directly program it. In all
 of these cases you can send and receive data via Internet, so it would
-be no problem to send your Sensor data with an HTTP post data to
+be no problem to send your sensor data with an HTTP post data to
 an API endpoint.
 
-Here is an example how to [read a soil humidity
-sensor](https://github.com/abarbanell/arduino-wino/tree/master/sketch_soil_wifi)
+Here is an example how to read a soil humidity
+sensor: [sketch_soil_wifi](https://github.com/abarbanell/arduino-wino/tree/master/sketch_soil_wifi)
  with a [Wino Board](http://wino-board.com) and send the data as
  JSON object to an API backend like
 [limitless garden](https://github.com/abarbanell/limitless-garden).
@@ -102,17 +102,17 @@ exactly the opposite from what I wanted to achieve.
 [![nginx on Raspberry -fullwidth]({{ site.baseurl }}/assets/img/2016/01/nginx.png)](https://github.com/abarbanell/limitless-garden)
 
 Instead of sitting close to the web server and converting from https
-to http, I wanted it to sit close to my web clients (my arduino's)
+to http, I wanted it to sit close to my web clients (my Arduino's)
 and convert from http to https. Then the requests could go out in
-the world wide internet without being someone bad. So I quickly
-reappropriated my oldes Raspberry Pi, a venerable model A, and told
+the world wide internet without being read by someone bad. So I quickly
+reappropriated my oldest Raspberry Pi, a venerable model A, and told
 it to
 
 ``` 
 $ sudo apt-get install nginx 
 ```
 
-then just adding one file in /etc/nginx/sites-available:
+then just added one file in /etc/nginx/sites-available:
 
 ``` 
 # proxy server for selected stuff from /api folder, 
@@ -140,7 +140,7 @@ $ sudo ln -s /etc/nginx/sites-available/proxy /etc/nginx/sites-enabled
 $ sudo /etc/init.d/nginx restart 
 ```
 
-Done. Now you can connect all of your arduinos to the port 8118
+Done. Now you can connect all of your Arduinos to the port 8118
 (or another one if you changed this in the proxy rules) and the
 Raspberry will happily convert it to encrypted https traffic.
 
