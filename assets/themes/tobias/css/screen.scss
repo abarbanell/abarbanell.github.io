@@ -70,8 +70,7 @@ p {
 }
 
 a {
-  color: $foregroundColor;
-  text-decoration: underline $linkColor; 
+  color: $linkColor;
 }
 
 a:hover {
