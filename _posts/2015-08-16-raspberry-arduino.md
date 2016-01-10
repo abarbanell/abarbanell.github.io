@@ -9,10 +9,29 @@ title: "Monitoring the Real World with your Raspberry Pi - Part III: connecting 
 
 This is a followup on my recent blog posts about monitoring 
 my fleet of Raspberry Pi's with statsd and a very 
-simple monitoring script on the Raspberry. Please check the following posts about the first steps: 
+simple monitoring script on the Raspberry. Please check the following posts about this series:
 
-- [Monitoring your Raspberry Pi with Statsd - Part I](http://blog.abarbanell.de/raspberry/2015/07/18/Raspberry-Pi-Monitoring-With-Statsd/)
-- [Monitoring your Raspberry Pi with Statsd - Part II: the Statsd server](http://blog.abarbanell.de/linux/2015/08/08/statsd-docker/)
+- [part I](/raspberry/2015/07/18/Raspberry-Pi-Monitoring-With-Statsd/)
+setting up a minimal monitoring system using a [statsd client in
+python](https://pypi.python.org/pypi/statsd) on a [Raspberry
+Pi](https://www.raspberrypi.org/)
+
+- [part II](/linux/2015/08/08/statsd-docker/) setting up a [statsd
+server with graphite and grafana in a docker
+container](https://github.com/abarbanell/docker-grafana-graphite)
+on a small [Azure](http://www.azure.com) server
+
+- [part
+III (this blog post)](http://blog.abarbanell.de/raspberry/2015/08/16/raspberry-arduino/) -
+combining this with an [Arduino](http://www.arduino.cc) microcontroller
+to measure analog data like the soil humidity of my plants
+
+- [part IV](/raspberry/2015/12/30/monitoring-iot-backend) - a
+home-grown IOT-backend:
+[limitless-garden](https://github.com/abarbanell/limitless-garden)
+
+- [part V](/raspberry/2016/01/09/arduino-nginx): how to secure the traffic between your microcontrollers
+and the backend API, before I will in the next parts go into more details
 
 This is part three. And in a way, it is not. Because here I change
 the subject from "Monitoring your Raspberry Pi" to "Monitoring
