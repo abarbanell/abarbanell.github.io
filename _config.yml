@@ -13,7 +13,7 @@ title : Tobias Abarbanell
 tagline: Notes on Software Development
 author :
   name : Tobias Abarbanell
-  email : blog@abarbanell.de
+  # email : blog@abarbanell.de
   github : abarbanell
   twitter : tabarbanell
   avatar : https://avatars0.githubusercontent.com/u/4762766?v=3&s=75
