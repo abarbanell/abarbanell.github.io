@@ -67,7 +67,7 @@ and then we can install the
 [Python Statsd Client](https://pypi.python.org/pypi/statsd) with 
 
 ```
-$ pip install statsd
+$ sudo pip install statsd
 ```
 
 and then send our first metric with the python commands: 
