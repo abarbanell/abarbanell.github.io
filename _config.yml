@@ -7,6 +7,10 @@ markdown: kramdown
 highlighter: rouge
 gems: [jekyll-paginate]
 
+# ASSET_PATH broke with jekyll 3.0 upgrade, this is a temorary fix 
+# see: https://github.com/plusjade/jekyll-bootstrap/issues/290
+ASSET_PATH: /assets/themes/tobias
+
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
