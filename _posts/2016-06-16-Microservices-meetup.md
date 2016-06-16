@@ -56,7 +56,7 @@ This is my presentation from the Lausanne Cloud Computing Meetup on 16-Jun-2016
 	<ul style="margin-left = 0;" class="slides">
 		{% for slides in page.flexslider %}
 			<li>
-				<img "src="{{ slides.image }}" />
+				<img src="{{ slides.image }}" />
 			</li>
 		{% endfor %}
 	</ul>					

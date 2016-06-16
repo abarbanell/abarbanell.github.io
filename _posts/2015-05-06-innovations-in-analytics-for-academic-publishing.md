@@ -52,7 +52,7 @@ conference "Social Media and Web Analytics Innovation" in San Franscisco.
 	<ul style="margin-left = 0;" class="slides">
 		{% for slides in page.flexslider %}
 			<li>
-				<img "src="{{ slides.image }}" />
+				<img src="{{ slides.image }}" />
 			</li>
 		{% endfor %}
 	</ul>					
