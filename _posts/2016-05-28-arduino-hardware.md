@@ -97,8 +97,7 @@ clone inside the sketchbook/hardware/wino/sam folder.
 
 as a test I have added a few logDebug statements in my copy of the library code to see whether this would actually allow me to drill into the exectution of the library code: 
 
-You can see samples in this github commit: 
-https://github.com/abarbanell/WinoBOARD_Addin/commit/0fea576db0156eaca86affb3336f2793f704e11d
+You can see samples in this [github commit](https://github.com/abarbanell/WinoBOARD_Addin/commit/0fea576db0156eaca86affb3336f2793f704e11d).
 
 
 # Working with the code
