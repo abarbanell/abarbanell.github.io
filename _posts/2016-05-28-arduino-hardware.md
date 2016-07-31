@@ -13,6 +13,8 @@ I have a [winoBoard](http://www.wino-board.com) arduino compatible controller an
 
 Here I would like to describe the development setup for this type of contribution.
 
+_EDIT: updated this for Arduino 1.6.10_
+
 # Arduino IDE
 
 ## Fresh install
@@ -21,25 +23,53 @@ If you have not already done this, or if you are running an older
 version of the Arduino IDE, first install the Arduino IDE as described
 in
 [https://www.arduino.cc/en/Main/Software](https://www.arduino.cc/en/Main/Software)
-- latest version tested is 1.6.9
+- latest version tested is 1.6.10
 
 On my linux box I have extracted the download file and then moved
 it to my preferred install location with
 
-	$ sudo chown -R bin.bin arduino-1.6.9
-	$ sudo mv arduino-1.6.9 /opt
+	$ sudo chown -R bin.bin arduino-1.6.10
+	$ sudo mv arduino-1.6.10 /opt
 
 
-and for convenience I have a desktop icon pointing to the IDE binary at /opt/arduino-1.6.9/arduino
+and for convenience I have a desktop icon pointing to the IDE binary at /opt/arduino-1.6.10/arduino
 
 # Install tools and library
 
-We will be working with the source code of the library, but we still need to install it in the regular way 
-via the boardmanager, otherwise we will be missinhg the compiler and upload tools. 
+We will later be working with the source code of the library, but we still need to install it in the regular way 
+via the boardmanager, otherwise we will be missing the compiler and upload tools. 
+
+If you open the Arduino IDE now, first go into the preferences and
+change the sketchbook directory if necessary. 
+
+Next, please navigate to the board manager and select the Wino Board: 
+
+![IDE board manager dialog]({{ site.baseurl }}/assets/img/2016/06/ide-wino.png)
 
 It is all described on the [Wino board website](http://www.wino-board.com/docs/quickstart)
 
-# get the source code
+# verify 
+
+To verify you can compile and upload a sketch try the most simple of all, the empty sketch: 
+
+![IDE board empty sketch]({{ site.baseurl }}/assets/img/2016/06/ide-empty-sketch.png) 
+
+Or you also try the next simplest, the well known blink sketch:
+
+```
+void setup() {
+  pinMode(2, OUTPUT); 
+}
+
+void loop() {
+ digitalWrite(2, HIGH);   // turn the LED on (HIGH is the voltage level)
+ delay(1000);             // wait for a second
+ digitalWrite(2, LOW);    // turn the LED off by making the voltage LOW
+ delay(1000);             // wait for a second
+ }
+```
+
+# get the Wino library source code
 
 First, have a look at the library folder in
 [github/FKopp/WinoBOARD_Addin](https://github.com/FKopp/WinoBOARD_Addin).
@@ -58,35 +88,36 @@ The Arduino IDE expects the content of the hardware folder in s pecific structur
 	rm -rf 1.6.8
 	ln -s (absolute path of the git clone directory) 1.6.8
 
-as a result you should now have all the files of your library git
+_Note:_ The version 1.6.8 above is the version of the Wino library *not* the version of the Arduino IDE.
+
+As a result you should now have all the files of your library git
 clone inside the sketchbook/hardware/wino/sam folder.
-
-If you open the Arduino IDE now, first go into the preferences and
-change the sketchbook directory if necessary. 
-
-Next, please navigate to the board manager and select the Wino Board: 
-
-![IDE board manager dialog]({{ site.baseurl }}/assets/img/2016/06/ide-wino.png)
 
 # verify that everything is there
 
-Start a new sketch, select the WinoBoard and compile. the compile should be completing without errors.
+as a test I have added a few logDebug statements in my copy of the library code to see whether this would actually allow me to drill into the exectution of the library code: 
 
-![IDE board empty sketch]({{ site.baseurl }}/assets/img/2016/06/ide-empty-sketch.png) 
+You can see samples in this github commit: 
+https://github.com/abarbanell/WinoBOARD_Addin/commit/0fea576db0156eaca86affb3336f2793f704e11d
 
 
 # Working with the code
 
 Please refer to
 [https://gist.github.com/Chaser324/ce0505fbed06b947d962](https://gist.github.com/Chaser324/ce0505fbed06b947d962)
-for a detailed explanation about how to work with a foked repsitory
+for a detailed explanation about how to work with a forked repsitory
 and create pull requests to include back in the original repo.
-.
+
+I also found it useful to read this blog post about [updating a
+fork directly from
+GitHub](http://www.hpique.com/2013/09/updating-a-fork-directly-from-github/)
+in case the master has some chnages which you want to pull into
+your forked repo.
 
 # Conclusion
 
 If everything works then you can contribute and create a pull
-requuest like this:
+request like this:
 [https://github.com/FKopp/WinoBOARD_Addin/pull/1](https://github.com/FKopp/WinoBOARD_Addin/pull/1)
 - it got accepted and will now be part of the next version of the
 library.
