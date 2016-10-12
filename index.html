@@ -1,33 +1,14 @@
 ---
-layout: page
-title: Tobias Abarbanell
-tagline: Notes on Software Development
+layout: archive
+author_profile: true
 ---
-{% include JB/setup %}
 
-<h2> Posts</h2>
+{% include base_path %}
 
-<ul class="posts">
-  {% for post in paginator.posts %}
-    <li>
-	<strong>
-		<span>{{ post.date | date_to_string }}</span> &raquo; 
-		<a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
-	</strong>
-        <p>{{ post.excerpt | strip_html | truncate: 300 }}</p>
-    </li>
-  {% endfor %}
-</ul>
+<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
 
- <div class="module pagination color-3">
-        {% if paginator.previous_page %}
-            <a href="{{ site.url }}{{ paginator.previous_page_path }}" class="previous">Previous</a>
-        {% endif %}
+{% for post in paginator.posts %}
+  {% include archive-single.html %}
+{% endfor %}
 
-        <span class="page_number">&mdash; {{ paginator.page }} of {{ paginator.total_pages }} &mdash;</span>
-
-        {% if paginator.next_page %}
-            <a href="{{ site.url }}{{ paginator.next_page_path }}" class="next">Next</a>
-        {% endif %}
-    </div>
-
+{% include paginator.html %}
