@@ -3,7 +3,6 @@ layout: page
 title: "About me and about this blog"
 description: "Tobias Abarbanell's blog on things"
 ---
-{% include JB/setup %}
 
 # Tobias Abarbanell - About me
 
