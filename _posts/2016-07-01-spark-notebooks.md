@@ -1,11 +1,8 @@
 ---
-layout: post
 title: "Spark Notebooks"
-description: ""
-category: 
-tags: []
+category: spark 
+tags: [spark, docker, hadoop]
 ---
-{% include JB/setup %}
 
 Recently, I have been playing with Spark notebooks from
 [andypetrella/spark-notebook](https://github.com/andypetrella/spark-notebook)
