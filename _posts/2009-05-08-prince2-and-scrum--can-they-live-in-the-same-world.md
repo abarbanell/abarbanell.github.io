@@ -1,11 +1,8 @@
 ---
-layout: post
 title: "PRINCE2 and SCRUM – can they live in the same world?"
-description: ""
 category: scrum
 tags: [scrum, agile, prince2, process]
 ---
-{% include JB/setup %}
 
 # Intro
 

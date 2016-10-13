@@ -1,11 +1,8 @@
 ---
-layout: post
 title: "Raspberry Pi and Scala: The Typesafe Stack"
-description: ""
 category: raspberry
 tags: [raspberry, scala]
 ---
-{% include JB/setup %}
 
 Following on from my earlier
 [post](http:/2012/09/16/raspberry/raspberry-pi-and-scala/) I wanted to get the

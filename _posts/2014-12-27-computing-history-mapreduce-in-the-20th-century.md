@@ -1,11 +1,9 @@
 ---
-layout: post
 title: "Computing History: MapReduce in the 20th century"
 description: "A non-fictional fairy tale of MapReduce jobs in the old times"
 category: algorithms 
 tags: [mapreduce, history, algorithms, google, software patent, network]
 ---
-{% include JB/setup %}
 
 
 This is the time of the year, between Christmas and the end of the year,

@@ -1,11 +1,8 @@
 ---
-layout: post
 title: "Raspberry Pi and Scala"
-description: ""
 category: raspberry
 tags: [raspberry, scala]
 ---
-{% include JB/setup %}
 
 This is a little experience report how to bring up [Scala](http://www.scala-lang.org/) 
 on my [RaspberryPi](http://www.raspberrypi.org/)

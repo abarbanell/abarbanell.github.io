@@ -1,11 +1,9 @@
 ---
-layout: post
 title: "Book Review: Everything is Miscellaneous"
 description: "Review of a book written by David Weinberger"
 category: miscellaneous
 tags: [books, data, miscellaneous]
 ---
-{% include JB/setup %}
 
 There is a very interesting book by David Weinberger I just read for the
 second time – it should be for everyone interested how traditional

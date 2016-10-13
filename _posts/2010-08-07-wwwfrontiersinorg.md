@@ -1,11 +1,8 @@
 ---
-layout: post
 title: "www.frontiersin.org"
-description: ""
 category: scrum
 tags: [agile, scrum, process]
 ---
-{% include JB/setup %}
 
 We just brought live the new site of [www.frontiersin.org](http://www.frontiersin.org), which
 was my biggest SCRUM project up to now. Here are my first learnings from

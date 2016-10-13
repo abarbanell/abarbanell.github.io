@@ -1,11 +1,8 @@
 ---
-layout: post
 title: "New Theme for this Blog"
-description: ""
 category: jekyll
 tags: [css, sass, jekyll]
 ---
-{% include JB/setup %}
 
 This blog starts to appear in a new look. I have decided to create my own
 theme for this, as a starting point I have used the well-known

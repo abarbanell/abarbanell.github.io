@@ -1,12 +1,9 @@
 ---
-layout: post
 title: "Quick tip: node.js on Azure or Heroku - native modules"
 description: "Why I moved back to heroku"
 category: linux
 tags: [heroku, azure, node.js]
 ---
-{% include JB/setup %}
-
 
 This is a quick tip why I moved one of my websites back from Azure
 to Heroku.

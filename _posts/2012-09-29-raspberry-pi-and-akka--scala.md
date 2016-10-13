@@ -1,11 +1,8 @@
 ---
-layout: post
 title: "Raspberry Pi and Akka / Scala"
-description: ""
 category: raspberry
 tags: [scala, akka, raspberry]
 ---
-{% include JB/setup %}
 
 This post is about running [Akka](http://akka.io/) on the Raspberry Pi, but because this
 is so simple to do I will also talk about a simpler development and

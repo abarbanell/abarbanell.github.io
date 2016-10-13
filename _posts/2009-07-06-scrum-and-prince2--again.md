@@ -1,11 +1,8 @@
 ---
-layout: post
 title: "SCRUM and PRINCE2 – again"
-description: ""
 category: scrum
 tags: [scrum, agile, process, prince2]
 ---
-{% include JB/setup %}
 
 I found a [slideshow]
 (http://www.slideshare.net/jenshoffmann/integrating-scrum-with-classical-project-management)

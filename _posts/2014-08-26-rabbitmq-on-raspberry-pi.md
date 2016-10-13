@@ -1,11 +1,8 @@
 ---
-layout: post
 title: "RabbitMQ on Raspberry Pi"
-description: ""
 category: raspberry 
 tags: [raspberry, rabbitmq, linux]
 ---
-{% include JB/setup %}
 
 Playing around with [RabbitMQ](http://www.rabbitmq.com) lately, 
 I was interested how it would perform on a very small box, a 

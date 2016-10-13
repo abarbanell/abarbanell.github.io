@@ -1,11 +1,8 @@
 ---
-layout: post
 title: "Introducing SCRUM - ideas for a process backlog"
-description: ""
 category: scrum
 tags: [agile, process, scrum]
 ---
-{% include JB/setup %}
 
 In a recent project, I had to bootstrap a SCRUM environment – so the
 question is where do you start? One way of course is to get everybody on

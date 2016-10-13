@@ -1,11 +1,8 @@
 ---
-layout: post
 title: "Hadoop on Azure"
-description: ""
 category: linux
 tags: [.net, tools, hadoop, java ]
 ---
-{% include JB/setup %}
 
 _(last updated 2014-10-11_)
 

@@ -1,11 +1,8 @@
 ---
-layout: post
 title: "Moving my Blog from Wordpress to Jekyll Bootstrap"
-description: ""
 category: jekyll 
 tags: [wordpress, jekyll]
 ---
-{% include JB/setup %}
 
 ## Rationale
 
