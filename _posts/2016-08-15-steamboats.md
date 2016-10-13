@@ -1,5 +1,5 @@
 ---
-title: Steamboats on the Lac Leman
+title: "Steamboats on the Lac Leman"
 category: travel
 tags: [steamboats, switzerland, travel, lac leman, chillon, lausanne]
 ---
