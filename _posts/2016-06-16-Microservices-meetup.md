@@ -1,7 +1,6 @@
 ---
-layout: post
 title: "Microservice Architecture"
-description: "cwMeetupConference presentation from the Lausanne Cloud Computing Meetup, 16-Jun-2016"
+description: "Presentation from the Lausanne Cloud Computing Meetup, 16-Jun-2016"
 category: slides 
 tags: [presentation, micro service architecture, cloud computing, agile]
 flexslider: 
@@ -46,7 +45,6 @@ flexslider:
  - image: /assets/img/2016/06/16/microservices/Slide39.jpg
  - image: /assets/img/2016/06/16/microservices/Slide40.jpg
 ---
-{% include JB/setup %}
 
 
 This is my presentation from the Lausanne Cloud Computing Meetup on 16-Jun-2016

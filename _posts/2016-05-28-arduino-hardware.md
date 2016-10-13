@@ -1,13 +1,9 @@
 ---
-layout: post
 title: "Arduino IDE: developing flow for hardware libraries"
-description: ""
 category: Arduino
 tags: [arduino]
 ---
-{% include JB/setup %}
 
-# Intro
 
 I have a [winoBoard](http://www.wino-board.com) arduino compatible controller and one of the great things is the on-board [ESP8266](https://en.wikipedia.org/wiki/ESP8266) wifi chip. The board comes with a library to make it easier to "talk" to the wifi, but I found a few things missing, so I wanted to contribute.
 
