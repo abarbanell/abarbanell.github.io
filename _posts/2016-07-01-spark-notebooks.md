@@ -17,6 +17,6 @@ collect tthe related posts. Keep it bookmarked :)
 Anyway, if you like it, I would be happy about some stars on github
 as well.
 
-Feedback is always welcome, please let me know what you think (in
-the comments section below)
+Feedback is always welcome, please let me know what you think in
+the comments section below.
 
