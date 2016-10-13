@@ -1,5 +1,5 @@
 ---
-category : Linux
+category : linux
 tagline: "install a statsd server with docker"
 tags : [docker, statsd, azure, linux]
 title: "Monitoring your Raspberry Pi with Statsd - Part II: the Statsd server"
