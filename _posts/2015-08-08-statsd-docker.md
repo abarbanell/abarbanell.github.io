@@ -1,11 +1,9 @@
 ---
-layout: post
 category : Linux
 tagline: "install a statsd server with docker"
 tags : [docker, statsd, azure, linux]
 title: "Monitoring your Raspberry Pi with Statsd - Part II: the Statsd server"
 ---
-{% include JB/setup %}
 
 In a previous post I have shown how to set up a 
 [minimal server logging infrastructure on a Raspberry

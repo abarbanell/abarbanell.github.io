@@ -1,12 +1,9 @@
 ---
-layout: post
 category : raspberry
 tagline: "Raspberry Pi Monitoring"
 tags : [raspberry, monitoring, linux, statsd]
 title: Monitoring your Raspberry Pi with Statsd - Part I
 ---
-{% include JB/setup %}
-
 
 I like to toy with my Raspberry - as evidenced by other
 [posts on this blog](/categories.html#raspberry-ref). 

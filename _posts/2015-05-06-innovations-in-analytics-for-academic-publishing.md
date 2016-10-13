@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Innovations in Analytics for Academic Publishing "
 description: "Conference presentation from the conference Social Media and Web Analytics Innovation, San Francisco, 30-Apr-2015"
 category: slides 
@@ -41,8 +40,6 @@ flexslider:
  - image: /assets/img/2015/04/30/Analytics/Slide34.jpg
  - image: /assets/img/2015/04/30/Analytics/Slide35.jpg
 ---
-{% include JB/setup %}
-
 
 My colleague Sandra Hausmann and I gave a talk on 30-Apr-2015 at the 
 conference "Social Media and Web Analytics Innovation" in San Franscisco.

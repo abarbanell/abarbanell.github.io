@@ -1,12 +1,8 @@
 ---
-layout: post
 title: "ASP.NET 5 (vNext) with docker on Linux"
-description: ""
 category: .NET
 tags: [.NET, Tools, Linux, docker]
 ---
-{% include JB/setup %}
-
 
 In this post I show how to start working with the upcoming ASP.NET 5
 (aka vNext) on Linux. At the time of this writing the latest version is

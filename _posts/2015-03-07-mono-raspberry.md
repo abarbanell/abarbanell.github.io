@@ -1,11 +1,8 @@
 ---
-layout: post
 category : raspberry
 tagline: "getting Mono on the Raspberry"
 tags : [raspberry, dotnet, mono]
 ---
-{% include JB/setup %}
-
 
 There three ways to get mono running on the Raspberry - just pulling
 the raspbian repository package (easy, but you get an older version), 

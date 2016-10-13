@@ -1,13 +1,8 @@
 ---
-layout: post
 title: "Dockerizing MongoDB on MacOS"
-description: ""
 category: linux
 tags: [macos, linux, docker, mongo]
 ---
-{% include JB/setup %}
-
-
 
 # HOWTO - MongoDB in a Docker container on MacOS 10.10 Yosemite
 

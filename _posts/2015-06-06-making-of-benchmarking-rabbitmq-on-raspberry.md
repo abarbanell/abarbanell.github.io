@@ -1,12 +1,9 @@
 ---
-layout: post
 title: "Making of: Benchmarking RabbitMQ on Raspberry Pi"
 category : raspberry
 tagline: "Benchmarking RabbitMQ on Raspberry Pi"
 tags : [raspberry, rabbitmq, benchmark]
 ---
-{% include JB/setup %}
-
 
 In my last post I have shared some results from [Benchmarking RabbitMQ on Raspberry Pi](/raspberry/2015/05/17/benchmarking-rabbitmq-on-raspberry/).  
 

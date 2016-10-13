@@ -1,11 +1,8 @@
 ---
-layout: post
 title: "devenv: Docker setup for mongo and RabbitMQ"
-description: ""
 category: linux
-tags: []
+tags: [mongo, docker, rabbitMQ]
 ---
-{% include JB/setup %}
 
 This is a quick recipe how to set up a dockerized development environment 
 (e.g. for one of my node.js projects
