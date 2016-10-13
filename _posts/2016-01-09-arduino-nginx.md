@@ -1,11 +1,8 @@
 ---
-layout: post
 title: "How to secure your arduino IOT network with Raspberry Pi and nginx"
-description: ""
 category: raspberry 
 tags: [raspberrypi, arduino, nginx, iot, security]
 ---
-{% include JB/setup %}
 
 As a general rule, all API calls to your backend should always be
 encrypted with https (SSL/TLS), this applies for IOT scenarios just the same

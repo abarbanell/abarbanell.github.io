@@ -1,11 +1,9 @@
 ---
-layout: post
 title: "Limitless Garden - the home-grown IOT backend service"
 description: "Monitoring the real world with Raspberry Pi and Arduino - part IV"
 category: raspberry 
 tags: [raspberry, arduino, iot, mongo, node.js, api]
 ---
-{% include JB/setup %}
 
 In the first three parts of this series we have looked into
 

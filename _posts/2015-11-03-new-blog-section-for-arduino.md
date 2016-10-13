@@ -1,11 +1,9 @@
 ---
-layout: post
 title: "New Blog section for Arduino"
 description: "Announcement of a new blog section for Arduino-related topics"
 category: arduino
 tags: [arduino, iot, software, hardware]
 ---
-{% include JB/setup %}
 
 I have created a new section in this blog with articles focused around Arduino and general Internet-of-Things
 topics. There will be coverage of different Arduino projects, different boards and especially the 
