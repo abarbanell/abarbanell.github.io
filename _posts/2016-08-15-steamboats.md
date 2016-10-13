@@ -1,10 +1,8 @@
 ---
-title: "Steamboats on the Lac Leman"
+title: Steamboats on the Lac Leman
 category: travel
 tags: [steamboats, switzerland, travel, lac leman, chillon, lausanne]
 ---
-
-# Steamboats on the Lac Leman
 
 A video about a  day tour from Lausanne to the castle Chillon near Montreux
 
