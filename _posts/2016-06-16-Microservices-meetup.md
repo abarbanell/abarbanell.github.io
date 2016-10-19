@@ -62,3 +62,13 @@ This is my presentation from the Lausanne Cloud Computing Meetup on 16-Jun-2016
 
 You can [get the PDF here]({{ site.url }}/assets/pdf/Microservices-meetup-2016-06-16.pdf).
 
+
+{% if page.flexslider %}
+<!-- Google CDN Hosted jQuery  -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+<!-- Flexslider Library  -->
+<script src="/assets/js/jquery.flexslider.min.js"></script>
+<!-- Initialisation Code  -->
+<script src="/assets/js/slider.js"></script>
+{% endif %}
+
