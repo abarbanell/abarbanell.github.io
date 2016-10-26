@@ -33,7 +33,9 @@
       {% endif %}
     </h2>
     {% if post.date %}
-      <p class="page__meta"><i class="fa fa-calendar" aria-hidden="true"></i> Published: {{ post.date }} </p>
+      <p class="page__meta"><i class="fa fa-calendar" aria-hidden="true"></i> 
+          Published: <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time> 
+      </p>
     {% endif %}
     {% if post.read_time %}
       <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
