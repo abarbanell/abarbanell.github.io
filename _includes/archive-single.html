@@ -34,7 +34,7 @@
     </h2>
     {% if post.date %}
       <p class="page__meta"><i class="fa fa-calendar" aria-hidden="true"></i> 
-          Published: <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time> 
+          Published: <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time> 
       </p>
     {% endif %}
     {% if post.read_time %}
