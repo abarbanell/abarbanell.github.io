@@ -19,7 +19,7 @@ both of them are too heavy and resource hungry.
 I am used to Visual Studio Code because it is excellent for Javascript and Typescript, 
 so my node.js and Angular projects work very well. I also do a fair amount of work on 
 small cloud servers and devices like Raspberry Pi, so I want to build each project from
-command line by pulling the project from github, running a build script and running the 
+command line by pulling the project from github, executing a build script and running the 
 project.
 
 This means the build scripts must be able to run without an IDE. So I settled on sbt for 
@@ -44,6 +44,9 @@ your project, and the file is described on the
 
 You can configure several tasks for one main command. The task with the name "build" also 
 has a keyboard shortcut out of the box.
+
+THe configuration shown above is the one which works for me as a starting point. Maybe I 
+will add or change something later, but for now it does the job.
 
 # Conclusion
 
