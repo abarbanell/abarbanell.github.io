@@ -38,7 +38,7 @@ You will need to register on http://dev.twitter.com for some API keys: register 
 developer, create your application, and create API tokens for it, you need the following
 values in your file ```.conf.rc```: 
 
-````
+```
 # this file should be gitignore'd
  
 export TWITTER_CONSUMER_KEY="YOURKEY"
@@ -47,7 +47,7 @@ export TWITTER_ACCESS_TOKEN="YOURKEY"
 export TWITTER_ACCESS_TOKEN_SECRET="YOURKEY"
 ``` 
 
-next is to run the tweetfeed app with 
+Next is to run the tweetfeed app with 
 
 ```
 $ . .conf.rc
@@ -55,7 +55,7 @@ $ sbt run -mem 512
 ```
 
 this ``` -mem 512 ``` restricts the application to 512 MB memory, which works 
-on the Raspberry Pi 3 which has total 1 GB memory. with less memory the spark 
+on the Raspberry Pi 3 which has total 1 GB memory. With less memory the spark 
 libaries won't start.
 
 Be prepared to wait a bit for all scala and spark libraries downloaded by the 
@@ -67,9 +67,9 @@ not using much CPU, the memory footprint is of course significant.
 
 ![rpym dashboard]({{ site.baseurl }}/assets/img/2017/tweetfeed-statsd.png)
 
-The program as it is in my repo (as of now) will do this for 5 minutes and then 
-quit. Of course it is easy to change, and I may change this in the future. Just read 
-the code to check if you are interested.
+The program in my repo (as of now) will do this for 5 minutes and then 
+quit. Of course it is easy to change, and I may change this in the future. 
+Just read the code to check if you are interested.
 
 # Why bother? 
 
