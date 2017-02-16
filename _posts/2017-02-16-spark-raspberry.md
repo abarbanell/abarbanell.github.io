@@ -1,7 +1,7 @@
 ---
 title: Apache Spark on a Raspberry Pi
 category: scala
-tags: [scala, sbt, vscode]
+tags: [scala, sbt, spark, raspberry]
 ---
 
 Valentine's Day has just passed and I still have some Raspberry Pi
