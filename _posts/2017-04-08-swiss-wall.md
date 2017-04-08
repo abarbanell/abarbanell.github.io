@@ -9,7 +9,7 @@ After some fact checking we can now prove that Switzerland and France already ha
 
 ![Swiss Border Wall]({{ site.baseurl }}/assets/img/2017/04/Swiss-Border-Wall-1280px.jpg)
 
-Let's hope it keeps the countries safe :) 
+Let's hope it keeps both countries safe :) 
 
 
 
