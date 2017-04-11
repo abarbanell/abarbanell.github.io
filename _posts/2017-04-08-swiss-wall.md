@@ -4,7 +4,7 @@ category: travel
 tags: [switzerland, travel, fun]
 date: 2017-04-08
 header:
-  image: {{ site.baseurl }}/assets/img/2017/04/Swiss-Border-Wall-1280px.jpg
+  image:  2017/04/Swiss-Border-Wall.jpg
   teaser: 2017/04/Swiss-Border-Wall-1280px.jpg
 ---
 
