@@ -4,9 +4,18 @@ This is the git repository driving the github pages at
 [blog.abarbanell.de](http://blog.abarbanell.de). The technology
 used is Jekyll with the theme [minimal mistakes](https://mmistakes.github.io/minimal-mistakes/)
 
-## Status
+## HowTo
+Howto run local: see [github docs](https://help.github.com/enterprise/2.9/user/articles/setting-up-your-github-pages-site-locally-with-jekyll/).
 
-Theme migration in progress, you may see a lot of broken stuff for a short while.
+TLDR;
+
+```
+bundle exec jekyll serve --drafts
+```
+
+will bring up the site on http://localhst:4000
+
+
 
 ## License 
 
