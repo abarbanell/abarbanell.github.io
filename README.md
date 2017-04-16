@@ -1,5 +1,7 @@
 # abarbanell.github.io -> http://blog.abarbanell.de
 
+[![Build Status](https://travis-ci.org/abarbanell/abarbanell.github.io.svg?branch=master)](https://travis-ci.org/abarbanell/abarbanell.github.io)
+
 This is the git repository driving the github pages at
 [blog.abarbanell.de](http://blog.abarbanell.de). The technology
 used is Jekyll with the theme [minimal mistakes](https://mmistakes.github.io/minimal-mistakes/)
