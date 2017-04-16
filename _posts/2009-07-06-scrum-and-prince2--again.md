@@ -4,8 +4,7 @@ category: scrum
 tags: [scrum, agile, process, prince2]
 ---
 
-I found a [slideshow]
-(http://www.slideshare.net/jenshoffmann/integrating-scrum-with-classical-project-management)
+I found a [slideshow](http://www.slideshare.net/jenshoffmann/integrating-scrum-with-classical-project-management)
  on integrating scrum with classical project
 management which is much more elaborate than 
 my post a few weeks ago – looks interesting.

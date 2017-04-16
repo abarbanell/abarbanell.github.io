@@ -1,7 +1,7 @@
 ---
 title: "Hadoop on Azure"
 category: linux
-tags: [.net, tools, hadoop, java ]
+tags: [dotnet, tools, hadoop, java ]
 ---
 
 _(last updated 2014-10-11_)

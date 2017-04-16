@@ -1,16 +1,18 @@
 ---
 layout: default
-author_profile: false
+author_profile: true
 ---
 
 <div id="main" role="main">
   {% include sidebar.html %}
 
   <div class="archive">
-    <h1 class="page__title">{{ page.title }}</h1>
+    <h1 class="page__title">Posts for {{ page.type }}: {{ page.title }}</h1>
     {% include base_path %}
     {% for post in page.posts %}
       {% include archive-single.html %}
     {% endfor %}
+
+      {% include adsense.html %}
   </div>
 </div>

@@ -1,7 +1,7 @@
 ---
 title: "ASP.NET 5 (vNext) with docker on Linux"
-category: .NET
-tags: [.NET, Tools, Linux, docker]
+category: dotnet
+tags: [dotnet, tools, linux, docker]
 ---
 
 In this post I show how to start working with the upcoming ASP.NET 5

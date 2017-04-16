@@ -1,6 +1,6 @@
 ---
 title: "Arduino IDE: developing flow for hardware libraries"
-category: Arduino
+category: arduino
 tags: [arduino]
 ---
 
