@@ -1,5 +1,5 @@
 ---
-title: "Scaling Scrum - SAFe or LeSS?"
+title: "Scaling Scrum - SAFe or LeSS, or none of them?"
 category: scrum
 tags: [scrum, agile]
 date: 2017-04-15
@@ -7,7 +7,7 @@ header:
   teaser: 2017/04/sprint-plan.png
 ---
 
-Scaling Scrum is a big discussion point in the community of Agilists. Here are a few experiences to consider when scaling SCRUM to multiple teams. Most people see this in the light of choosing one of the dominant scaling Frameworks, [SAFe]() or [LeSS]() - But I found enough things in each of them I did not like, so I would suggest [SYoW - Scaling Your own Way](.). 
+Scaling Scrum is a big discussion point in the community of Agilists. Here are a few experiences to consider when scaling SCRUM to multiple teams. Most people see this in the light of choosing one of the dominant scaling Frameworks, [SAFe](http://www.scaledagile.com/) or [LeSS](https://less.works/) - But I found enough things in each of them I did not like, so I would suggest [SYoW - Scaling Your own Way](.). 
 
 These are purely personal views, of course. But I am very much interested in your views as well, positive or negative. Let me know in the comments below.
 
@@ -19,7 +19,7 @@ I just don't like the complexity of this model, and first of all the approach of
 - on demo day, all participants are super-busy with "their" demo and have no time to join others
 - the whole demo session extends too much.
 
-Only Meeting lovers should go for SAFe. Just kidding. If your Business or your System Architecture forces you to integrate all teams for the release, then SAFe probably has a point. However, you should step back and think whether these are actually impediments for a true agile team. Examples might be: 
+Only meeting lovers should go for SAFe. Just kidding. If your business or your system architecture forces you to integrate all teams for the release, then SAFe probably has a point. However, you should step back and think whether these are actually impediments for a true agile team. Examples might be: 
 
 - Release of a group of teams has to be synchronized for commercial reasons: regulations / approvals in the medical, automotive or aerospace industry, payable release upgrades for dektop software
 - You have a monolithical architecture which can only be released together
@@ -29,13 +29,15 @@ Fix whatever is in your power to fix, as these impediments will hold you back fr
 
 ## What I don't like about LeSS
 
-The concept of feature teams which should be able to work on any code base required for their allocated feature is just reeking of chaos. No ownership for the code will result in low maintainability, slow progress due to unknown code. It is neither efficient nor enjoyable for the teams. Engineering teams take pride in well written code, and want to own whatever comes out of it in production.
+The same gripe about the fixed synchronization of team sprints applies here as well. 
+
+Additionally, the concept of feature teams which should be able to work on any code base required for their allocated feature is just reeking of chaos. No ownership for the code will result in low maintainability, slow progress due to unknown code. It is neither efficient nor enjoyable for the teams. Engineering teams take pride in well written code, and want to own whatever comes out of it in production.
 
 Feature teams create a framework for organized irresponsability.
 
 ## SYoW - Scaling Your own Way 
 
-We evolved our scaled Scrum in several evolutions, and I could see critical breakpoints during our growth which required to adjust the process: 
+We evolved our scaled Scrum in several iterations, and I could see critical breakpoints during our growth which required to adjust the process: 
 
 - a hand full of teams in one location, this is kind of easy (we skipped this step, actually) 
 - having the development teams offshore raises the complexity one level.
