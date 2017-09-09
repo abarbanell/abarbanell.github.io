@@ -34,17 +34,17 @@ but after forgetting to do this a few times and consequently searching in produc
 
 - node.js app for dokku -> example [limitless-garden](https://github.com/abarbanell/limitless-garden)
 - [dokku](http://dokku.viewdocs.io/dokku/) server hosted on [digitalOcean](https://www.digitalocean.com/) - they even have a ready configured [droplet](https://www.digitalocean.com/products/one-click-apps/dokku/) for this.
-- [Travis CI](https://travis-ci.org/abarbanell/limitless-garden/builds) connected CI
+- [Travis CI](https://travis-ci.org/abarbanell/limitless-garden/builds) connected to the github repo.
 
 # Let's go.
 
-There are in principle quite good descritiptions of the parts needed here: 
+There are in principle quite good descriptions of the parts needed here: 
 - [dokku setup](https://github.com/dokku/dokku/blob/master/docs/deployment/user-management.md)
 - [travis](https://docs.travis-ci.com/user/deployment/custom/#Git)
 
 But some small details did not quite work for me so here is a slightly extended remix of these steps.
 
-You need to have an ssh key for deployment to dokku, with the private key in your travis VM, and the public key in your dokku server. You do NOT want the private key readable in your github repo.
+You need to have an ssh key for deployment to dokku, with the private key in your travis VM, and the public key in your dokku server. You do not want the private key readable in your github repo - *NEVER*.
 
 ## Step 1: create a ssh key which allows deployment to dokku
 
@@ -102,7 +102,8 @@ travis encrypt-file deploy.key --add
 This command does three things: 
 - encrypts the file deploy.key into the file deploy.key.enc
 - adds a section "before_install" to your .travis.yml to decrypt the file in your running travis VM
-- adds two variables to your travis environment with the decrytion keys. 
+- adds two variables to your travis environment with the decryption keys. 
+
 
 ## Step 4: add after_success section to travis.yml for the deployment
 
@@ -119,15 +120,19 @@ after_success:
   - git push deploy master
 ```
 
-## build and deploy
+## Build and deploy
 
-Now whenever I commit something to my git repo and push to the github server, and the travis CI is triggered, it will also decrypt my key and deploy to dokku via "git push"
+Now whenever I push to the github server, and the Travis CI is triggered, it will also deploy to dokku via "git push"
 
 # Conclusion
 
 This should help me streamlining my development workflow. I hope it is useful for you, please do let me know in the comments below.
 
-In any case you may also like my [cat videos](https://www.youtube.com/playlist?list=PLyu5cHg7bWPjyymUCRJcpN_-fyoZzvlWh).
+#### Looking for something else? 
+Enjoy some of my [cat videos](https://www.youtube.com/watch?v=YPZPXDizUkU&list=PLyu5cHg7bWPjyymUCRJcpN_-fyoZzvlWh).
+
+#### Think cat videos are bullshit? 
+Then try this: [Cowshit is the new Bullshit](https://www.youtube.com/watch?v=bLTNhu8izu0).
 
 
 
