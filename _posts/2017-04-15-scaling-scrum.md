@@ -7,7 +7,7 @@ header:
   teaser: 2017/04/sprint-plan.png
 ---
 
-Scaling Scrum is a big discussion point in the community of Agilists. Here are a few experiences to consider when scaling SCRUM to multiple teams. Most people see this in the light of choosing one of the dominant scaling Frameworks, [SAFe](http://www.scaledagile.com/) or [LeSS](https://less.works/) - But I found enough things in each of them I did not like, so I would suggest [SYoW - Scaling Your own Way](.). 
+Scaling Scrum is a big discussion point in the community of Agilists. Here are a few experiences to consider when scaling SCRUM to multiple teams. Most people see this in the light of choosing one of the dominant scaling Frameworks, [SAFe](http://www.scaledagile.com/) or [LeSS](https://less.works/) - But I found enough things in each of them which I did not like, so I would suggest [SYoW - Scaling Your own Way](.). 
 
 These are purely personal views, of course. But I am very much interested in your views as well, positive or negative. Let me know in the comments below.
 
@@ -19,13 +19,13 @@ I just don't like the complexity of this model, and first of all the approach of
 - on demo day, all participants are super-busy with "their" demo and have no time to join others
 - the whole demo session extends too much.
 
-Only meeting lovers should go for SAFe. Just kidding. If your business or your system architecture forces you to integrate all teams for the release, then SAFe probably has a point. However, you should step back and think whether these are actually impediments for a true agile team. Examples might be: 
+Only meeting lovers should go for SAFe. Just kidding. If your business or your system architecture forces you to integrate all teams for the release, then SAFe probably has a point. However, you should step back and think whether these are actually impediments for a true agile team. Examples of reasons might be: 
 
-- Release of a group of teams has to be synchronized for commercial reasons: regulations / approvals in the medical, automotive or aerospace industry, payable release upgrades for dektop software
+- Release of a group of teams has to be synchronized for commercial reasons: regulations / approvals in the medical, automotive or aerospace industry, payable release upgrades for desktop software
 - You have a monolithical architecture which can only be released together
 - Acceptance test and/or deployment is manual, costly, time consuming. The cost of releasing prohibits a high release frequency.
 
-Fix whatever is in your power to fix, as these impediments will hold you back from faster time to market.
+Fix whatever is in your power to fix, as these impediments will hold you back from faster time to market. But don't wait until you have fixed everything - [Implementation of agile can also be done incrementally](/scrum/2009/04/23/introducing-scrum-ideas-for-a-process-backlog).
 
 ## What I don't like about LeSS
 
@@ -51,7 +51,7 @@ We skipped this step, so I will not go into details about this. You probably jus
 
 ## Scaling SCRUM - sprint 1: few teams in an offshore location
 
-Initially, we started with 3-4 teams in one offshore location, Agile experience had to be built up in the team, as we were building up our processes. Furthermore, the product owners and engineering management was in a different timezone from the team.
+Initially, we started with 3-4 teams in one offshore location, Agile experience had to be built up in the team, and we were building up our processes at the same time. Furthermore, the product owners and engineering management were in a different timezone from the development teams.
 
 Here is what worked for us: 
 
@@ -62,7 +62,7 @@ Here is what worked for us:
 These are points which did not work good enough: 
 
 - we kept the sprints synchronized, with all demos and planning sessions together. I would argue that this only worked because we had no other choice at the time due to our communication bandwidth. We kind of ignored the team structure and managed it from our headquarter like one big team.  Results were frustratingly long demo sessions, long planning session, even longer acceptance tests.
-- Overall, we focused fully on time to market, at the expense of maintainability and test / deployment automation. I still think this was the right decision businesswise, but it created some pain.
+- Overall, we focused fully on time to market, at the expense of maintainability and test / deployment automation. I still think this was the right decision businesswise, but it created some pain. 
 
 ## Sprint 1 Retrospective
 
@@ -71,11 +71,11 @@ We completed our magical communication square, to have two independant channels,
 
 ![offshore communication]({{ site.baseurl }}/images/2017/04/offshore-communication-square.png)
 
-You can see this as the cost of lacking colocation. 
+There is some duplication of work here, and we have seen this as the cost of lacking colocation. 
 
 ## Scaling Scrum - sprint 2 - groups of teams in multiple locations
 
-When we grew our organisation size, we started to correct some of the shortcuts: we built the next 3-4 teams in a different location, closer in timezone. We located PO's with the team. Most of all, we staggered the sprints so that every team was doing their demo on a different day. This allowed people to join more than just their own team's demo, especially for PO's and Srum Masters this was important. Each demo was smaller in scope, and thus shorter.
+When we grew our organisation size, we started to correct some of the shortcuts: we built the next 3-4 teams in a different location, closer in timezone. We located PO's with the team. Most of all, we staggered the sprints so that every team was doing their demo on a different day. This allowed people to join more than just their own team's demo, especially for PO's and Scrum Masters this was important. Each demo was smaller in scope, and thus shorter.
 
 ![Sprint Plan]({{ site.baseurl }}/images/2017/04/sprint-plan.png)
 
@@ -89,7 +89,7 @@ We see here a good example of [Conway's Law](https://en.wikipedia.org/wiki/Conwa
 
 It follows from this that SAFe may be suitable (or necessary) if your system is architected as a monolith for each Agile Release Train.
 
-Side comment - I also dislike the SAFe notion of a Release Train where all teams sit "locked in a train" and travel together from station to station. Sounds very inflexible to me. For us, it was the opposite: the release train is the release, not the sprint. If your team's sprint arrives late at the departure time, the train leaves without, and you just take the next one. With a high enough train / release frequency this is not a big problem. You need only limited planning beforehand. 
+Side comment - I also dislike the SAFe notion of a Release Train where all teams sit "locked in a train" and travel together from station to station. Sounds very inflexible to me. For us, it was the opposite: the release is the train, the teams are the passengers. If your team arrives late at the station, it will miss the release date but no problem, there is another scheduled release coming soon. The release does not wait. With a high enough train / release frequency this is not a big problem. You need only limited planning beforehand. 
 
 ## Scaling SCRUM - sprint 3 - drive for automation
 
@@ -101,7 +101,7 @@ It was an important decision to decouple the speed of the different teams to bui
 
 ## Conclusion
 
-When scaling SCRUM, look out for the communication bottlenecks in your organisation. Work can only flow if it is not held up by blockages. Iterate frequently on the product, but also on the process, to adjust your setup to your environemnt. Invest in your "last mile", how to get software from source code checkin to the production system: Continous Integration, test automation, zero-click deployments from source code repository. Reducind the cost or releasing is the key to accelerating the whole delivery.
+When scaling SCRUM, look out for the communication bottlenecks in your organisation. Work can only flow if it is not held up by blockages. Iterate frequently on the product, but also on the process, to adjust your setup to your environemnt. Invest in your "last mile", how to get software from source code checkin to the production system: Continous Integration, test automation, zero-click deployments from source code repository. Reducing the cost or releasing is the key to accelerating the whole delivery.
 
 I am very much interested in your views, please let me know what you think in the comments below. 
 
