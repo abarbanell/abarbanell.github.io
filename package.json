@@ -1,0 +1,12 @@
+{
+  "name": "blog.abarbanell.de",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abarbanell/abarbanell.github.io.git"
+  },
+  "license": "MIT",
+  "devDependencies": {},
+  "scripts": {
+    "start": "bundle exec jekyll serve --drafts"
+  }
+}
