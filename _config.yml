@@ -182,7 +182,7 @@ timezone: Europe/Zurich # http://en.wikipedia.org/wiki/List_of_tz_database_time_
 
 
 # Plugins
-gems:
+plugins:
   - jekyll-paginate
   - jekyll-archive
   - jekyll-sitemap
