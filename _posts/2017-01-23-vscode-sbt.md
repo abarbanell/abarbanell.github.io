@@ -45,7 +45,7 @@ your project, and the file is described on the
 You can configure several tasks for one main command. The task with the name "build" also 
 has a keyboard shortcut out of the box.
 
-THe configuration shown above is the one which works for me as a starting point. Maybe I 
+The configuration shown above is the one which works for me as a starting point. Maybe I 
 will add or change something later, but for now it does the job.
 
 # Conclusion
