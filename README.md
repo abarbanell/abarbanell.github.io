@@ -26,7 +26,11 @@ bundle exec jekyll serve --drafts
 
 will bring up the site on http://localhost:4000
 
+```
+bundle update
+```
 
+will update the gemfile.lock to newest versions of all dependencies
 
 ## License 
 
