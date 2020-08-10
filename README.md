@@ -16,6 +16,12 @@ The AWS bucket is blog.abarbanell.de
 The DNS is at Strato, configured to the AWS bucket at http://blog.abarbanell.de.s3-website.eu-central-1.amazonaws.com/
 
 ## HowTo
+
+### add post
+
+
+### run local
+
 Howto run local: see [github docs](https://help.github.com/enterprise/2.9/user/articles/setting-up-your-github-pages-site-locally-with-jekyll/).
 
 TLDR;
@@ -30,7 +36,8 @@ will bring up the site on http://localhost:4000
 bundle update
 ```
 
-will update the gemfile.lock to newest versions of all dependencies
+will update the gemfile.lock to newest versions of all dependencies. Don't forget to update the versions in 
+`.travis.yml` as well so that the production build is with the same ruby version etc.
 
 ## License 
 
