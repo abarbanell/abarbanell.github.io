@@ -26,9 +26,11 @@ Here is a quick overview of Atlassian products I have used.
 
 - used for Git at Frontiers (for some projects)
 - used with BitBucket Pipelines for CI/CD
-- implemented CD pipleine for Jelyll Blog to S3 backend
+- implemented CD pipeline for Jekyll Blog to S3 backend
 
 ## Integration with Gitlab
+
+CI/CD on Gitlab with Product Backlog / Ticket workflow on JIRA
 
 1. introduced at Procsea
 2. Introduced at Prediggo
